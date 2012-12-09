@@ -18,6 +18,7 @@ public class PersistenceTest {
             Model model = persistence.load(streamToModel)
             // then
             assertThat(model).isNotNull();
+//            model.
         } finally {
             Closeables.closeQuietly(streamToModel)
         }

@@ -1,6 +1,9 @@
 package pl.rafalmag.xmasgiftsdrawer
 
+import org.fest.assertions.api.Assertions
 import spock.lang.Shared
+
+import static org.fest.assertions.api.Assertions.assertThat
 
 
 class ModelInitializationTest extends spock.lang.Specification {
@@ -37,6 +40,12 @@ class ModelInitializationTest extends spock.lang.Specification {
         a     | a
         b     | b
         c     | c
+    }
+
+    def "should return persons"(){
+        def persons = model.getPersons();
+        expect:
+        persons.containsAll([a,b,c])
     }
 
 
