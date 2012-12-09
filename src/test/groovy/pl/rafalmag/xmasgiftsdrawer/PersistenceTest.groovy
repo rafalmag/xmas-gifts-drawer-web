@@ -16,9 +16,15 @@ public class PersistenceTest {
             // when
             def persistence = new Persistence()
             Model model = persistence.load(streamToModel)
+            def persons = model.getPersons()
             // then
-            assertThat(model).isNotNull();
-//            model.
+            assertThat(model).isNotNull()
+            assertThat(persons).contains(
+                    new Person("A"),
+                    new Person("B"),
+                    new Person("C"),
+                    new Person("D")
+            )
         } finally {
             Closeables.closeQuietly(streamToModel)
         }

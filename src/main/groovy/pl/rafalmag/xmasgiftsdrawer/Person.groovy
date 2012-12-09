@@ -1,15 +1,13 @@
 package pl.rafalmag.xmasgiftsdrawer
 
-import groovy.transform.ToString
-import groovy.transform.TupleConstructor
+import groovy.transform.Immutable
 
 /**
  * User: rafalmag
  * Date: 09.12.12
  * Time: 14:01
  */
-@TupleConstructor
-@ToString
+@Immutable
 class Person {
 
     String name;
