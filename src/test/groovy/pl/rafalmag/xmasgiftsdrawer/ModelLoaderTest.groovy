@@ -6,16 +6,16 @@ import org.junit.Test
 
 import static org.fest.assertions.api.Assertions.assertThat
 
-public class PersistenceTest {
+public class ModelLoaderTest {
 
     @Test
     public void should_load_model() throws Exception {
         // given
-        def streamToModel = Resources.getResource(PersistenceTest.class, "/model.csv").openStream()
+        def streamToModel = Resources.getResource(ModelLoaderTest.class, "/model.csv").openStream()
         try {
             // when
-            def persistence = new Persistence()
-            Model model = persistence.load(streamToModel)
+            def modelLoader = new ModelLoader(streamToModel)
+            Model model = modelLoader.load()
             def persons = model.getPersons()
             // then
             assertThat(model).isNotNull()
