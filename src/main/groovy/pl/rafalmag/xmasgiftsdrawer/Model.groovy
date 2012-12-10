@@ -14,15 +14,19 @@ class Model {
 
     public Model(List<Person> persons) {
         table = HashBasedTable.create(persons.size(),persons.size());
+        initTable(persons, table)
+    }
+
+    private void initTable(List<Person> persons, HashBasedTable<Person, Person, Boolean> table) {
         persons.each { person ->
             table.put(person, person, false);
         }
-        table.columnKeySet().each { column ->
-            table.rowKeySet().each { row ->
-                if (row.equals(column)) {
-                    table.put(row, column, false);
+        table.columnKeySet().each { getter ->
+            table.rowKeySet().each { giver ->
+                if (giver.equals(getter)) {
+                    setCannotGive(giver, getter);
                 } else {
-                    table.put(row, column, true);
+                    setCanGive(giver, getter);
                 }
             }
         }
@@ -34,5 +38,13 @@ class Model {
 
     Set<Person> getPersons() {
                table.rowKeySet();
+    }
+
+    void setCanGive(Person giver, Person getter) {
+        table.put(giver,getter,true);
+    }
+
+    void setCannotGive(Person giver, Person getter) {
+        table.put giver, getter, false;
     }
 }
