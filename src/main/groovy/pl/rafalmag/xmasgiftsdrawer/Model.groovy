@@ -2,26 +2,24 @@ package pl.rafalmag.xmasgiftsdrawer
 
 import com.google.common.collect.HashBasedTable
 import com.google.common.collect.Table
+import groovy.util.logging.Slf4j
 
 /**
  * User: rafalmag
  * Date: 09.12.12
  * Time: 13:31
  */
+@Slf4j
 class Model {
 
-    Table<Person /*giver*/, Person/*getter*/, Boolean> table
+    private final Table<Person /*giver*/, Person/*getter*/, Boolean> table
 
-    public Model() {
-        table = HashBasedTable.create();
+    public Model(List<Person> persons=[]) {
+        table = HashBasedTable.create(persons.size(), persons.size());
+        initTable(persons)
     }
 
-    public Model(List<Person> persons) {
-        table = HashBasedTable.create(persons.size(),persons.size());
-        initTable(persons, table)
-    }
-
-    private void initTable(List<Person> persons, HashBasedTable<Person, Person, Boolean> table) {
+    private void initTable(List<Person> persons) {
         persons.each { person ->
             table.put(person, person, false);
         }
@@ -36,19 +34,53 @@ class Model {
         }
     }
 
-    boolean canGive(Person giver, Person getter) {
+    public boolean canGive(Person giver, Person getter) {
         table.get(giver, getter)
     }
 
-    Set<Person> getPersons() {
+    public Set<Person> getPersons() {
         table.rowKeySet();
     }
 
-    void setCanGive(Person giver, Person getter) {
+    public void setCanGive(Person giver, Person getter) {
         table.put(giver, getter, true);
     }
 
-    void setCannotGive(Person giver, Person getter) {
+    public void setCannotGive(Person giver, Person getter) {
         table.put giver, getter, false;
+    }
+
+    public boolean isValid() {
+        isValidOnDiagonal() && isValidEveryoneGetsGift() && isValidEveryoneGivesGift()
+    }
+
+    def boolean isValidOnDiagonal() {
+        def diagonals = getPersons().findAll {
+            canGive(it, it)
+        }
+        if (diagonals.isEmpty()) {
+            true
+        } else {
+            log.warn("{} could buy gifts for themselves", diagonals)
+            false
+        }
+    }
+
+    boolean isValidEveryoneGetsGift() {
+        getPersons().findAll{getter->
+            def firstGiverForGetter = getPersons().find {giver->
+                canGive(giver,getter)
+            }
+            firstGiverForGetter  == null
+        }.isEmpty()
+    }
+
+    boolean isValidEveryoneGivesGift() {
+        getPersons().findAll{giver->
+            def firstGetterForGiver = getPersons().find {getter->
+                canGive(giver,getter)
+            }
+            firstGetterForGiver  == null
+        }.isEmpty()
     }
 }

@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b39d2c6-9326-403d-8d40-26b57dbeaf33" name="Default" comment="">
+    <list default="true" id="1b39d2c6-9326-403d-8d40-26b57dbeaf33" name="Default" comment="new validators">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelValidationTest.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Model.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Model.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoader.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoader.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoaderTest.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoaderTest.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Person.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Person.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xmas.iml" afterPath="$PROJECT_DIR$/xmas.iml" />
     </list>
     <ignored path="xmas.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355054087521" ignored="false" />
     <file path="/fragment.java" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355129778289" ignored="false" />
-    <file path="/Dummy.txt" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355135151043" ignored="false" />
+    <file path="/Dummy.txt" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355141503894" ignored="false" />
     <file path="/PersistenceTest.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355080495714" ignored="false" />
     <file path="/Dummy.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355128502339" ignored="false" />
     <file path="/Persistence.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355075557529" ignored="false" />
     <file path="/ModelTest.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355129820360" ignored="false" />
-    <file path="/Model.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355131613115" ignored="false" />
-    <file path="/Person.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355073967504" ignored="false" />
+    <file path="/Model.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355140077931" ignored="false" />
+    <file path="/Person.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355136078897" ignored="false" />
     <file path="/a.dummy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355075573288" ignored="false" />
-    <file path="/ModelLoader.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355129325700" ignored="false" />
+    <file path="/ModelLoader.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355139436631" ignored="false" />
     <file path="/ModelLoaderTest.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355135247186" ignored="false" />
+    <file path="/pom.xml" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355136646858" ignored="false" />
+    <file path="/ModelValidationTest.groovy" changelist="1b39d2c6-9326-403d-8d40-26b57dbeaf33" time="1355140393107" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,22 +100,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ModelLoader.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoader.groovy">
+      <file leaf-file-name="Model.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Model.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="20" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.88">
+            <state line="54" column="4" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.33271375">
+              <folding>
+                <element signature="e#37#84#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="21" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelLoaderTest.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoaderTest.groovy">
+      <file leaf-file-name="ModelValidationTest.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelValidationTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="40" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#37#75#0" expanded="true" />
-              </folding>
+            <state line="39" column="59" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,16 +153,17 @@
         <option value="$PROJECT_DIR$/src/HelloSpock.groovy" />
         <option value="$PROJECT_DIR$/src/Scene.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/example/HelloSpock.groovy" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Person.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Persistence.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/PersistenceTest.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelTest.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelInitializationTest.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Model.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoader.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoaderTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Person.groovy" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoader.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Model.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelValidationTest.groovy" />
       </list>
     </option>
   </component>
@@ -160,7 +180,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -198,28 +218,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="xmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,10 +284,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="example" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -728,7 +722,11 @@
       <created>1355131745524</created>
       <updated>1355131745524</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="removed dead code">
+      <created>1355135288438</created>
+      <updated>1355135288438</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -768,12 +766,12 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6706302" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.6706302" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26580226" sideWeight="0.40071344" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26580226" sideWeight="0.35434008" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39951378" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26580226" sideWeight="0.26159334" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26580226" sideWeight="0.3079667" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -819,7 +817,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed dead code" />
+    <option name="LAST_COMMIT_MESSAGE" value="new validators" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -839,6 +837,7 @@
     <MESSAGE value="modelLoader finished" />
     <MESSAGE value="modelLoader and model finished" />
     <MESSAGE value="removed dead code" />
+    <MESSAGE value="new validators" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -848,20 +847,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_03/src.zip!/java/io/InputStreamReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="13" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.31944445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_03/src.zip!/java/io/BufferedReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="11" selection-start="2779" selection-end="2779" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_03/jre/lib/rt.jar!/java/util/Deque.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="17" selection-start="156" selection-end="161" vertical-scroll-proportion="0.16441005" />
@@ -881,7 +866,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="17" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.3326886">
           <folding>
-            <element signature="e#0#9834#0" expanded="true" />
+            <element signature="e#0#9834#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -907,36 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/example/HelloSpock.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelInitializationTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="62" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Model.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="38" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#37#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Person.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -944,19 +899,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/example/HelloSpock.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Person.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="10" selection-start="168" selection-end="168" vertical-scroll-proportion="0.37918216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoaderTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="40" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.0">
+        <state line="2" column="43" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoader.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="31" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.33643124">
           <folding>
             <element signature="e#37#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/ModelLoader.groovy">
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelInitializationTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="20" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.88">
+        <state line="17" column="47" selection-start="100" selection-end="576" vertical-scroll-proportion="0.063197024">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="21" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/pl/rafalmag/xmasgiftsdrawer/ModelValidationTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="59" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/pl/rafalmag/xmasgiftsdrawer/Model.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="4" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.33271375">
+          <folding>
+            <element signature="e#37#84#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

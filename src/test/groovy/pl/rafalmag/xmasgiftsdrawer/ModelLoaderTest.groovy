@@ -1,6 +1,5 @@
 package pl.rafalmag.xmasgiftsdrawer
 
-import groovy.mock.interceptor.MockFor
 import spock.lang.Shared
 
 public class ModelLoaderTest extends spock.lang.Specification {

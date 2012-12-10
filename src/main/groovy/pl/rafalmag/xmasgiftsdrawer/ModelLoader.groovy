@@ -1,7 +1,6 @@
 package pl.rafalmag.xmasgiftsdrawer
 
 import com.google.common.base.Splitter
-import com.google.common.base.Strings
 import com.google.common.collect.Lists
 
 class ModelLoader {
@@ -27,7 +26,7 @@ class ModelLoader {
 
     private String readLine() {
         String line = ""
-        while (line != null && line.isEmpty()) {
+        while (line?.isEmpty()) {
             line = reader.readLine()
         }
         line
@@ -47,10 +46,17 @@ class ModelLoader {
 
         getters.each { getter ->
             def value = values.removeFirst()
-            if (value == '1')
-                model.setCanGive(giver, getter)
-            else
-                model.setCannotGive(giver, getter)
+            switch(value){
+                case '1':
+                    model.setCanGive(giver, getter)
+                    break;
+                case '0':
+                    model.setCannotGive(giver, getter)
+                    break;
+                default:
+                    //TODO my exception
+                    throw new IOException("Value: "+value + " in line: "+line+" not supported.")
+            }
         }
     }
 }

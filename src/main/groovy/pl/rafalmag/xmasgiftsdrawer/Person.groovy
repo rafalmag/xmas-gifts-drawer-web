@@ -10,5 +10,5 @@ import groovy.transform.Immutable
 @Immutable
 class Person {
 
-    String name;
+    final String name;
 }
