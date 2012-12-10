@@ -59,14 +59,12 @@ public class ModelLoaderTest extends spock.lang.Specification {
 
     def "should parse line"() {
         given:
-        InputStream inputStream = [:] as InputStream
-        ModelLoader modelLoader = new ModelLoader(inputStream)
         def getters = [a, b, c, d]
         Model model = new Model()
         def giver = a
 
         when:
-        modelLoader.parseLine(model, giver, getters, "A;0;1;0;1")
+        ModelLoader.parseLine(model, giver, getters, "A;0;1;0;1")
 
         then:
         !model.canGive(giver, a)

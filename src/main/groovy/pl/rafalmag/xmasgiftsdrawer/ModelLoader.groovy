@@ -41,10 +41,7 @@ class ModelLoader {
         assert readLine() == null
     }
 
-    def void parseLine(Model model, Person giver,List<Person> getters, String line) {
-        while (line.isEmpty()) {
-            line = reader.readLine()
-        }
+    def static void parseLine(Model model, Person giver,List<Person> getters, String line) {
         def values = Lists.newLinkedList(Splitter.on(';').split(line))
         values.removeFirst();
 
