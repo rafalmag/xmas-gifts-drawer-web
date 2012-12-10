@@ -1,6 +1,5 @@
 package pl.rafalmag.xmasgiftsdrawer
 
-import com.google.common.io.Resources
 import groovy.mock.interceptor.MockFor
 import spock.lang.Shared
 
@@ -19,7 +18,7 @@ public class ModelLoaderTest extends spock.lang.Specification {
     Model model;
 
     def setup() {
-        streamToModel = Resources.getResource(ModelLoaderTest.class, "/model.csv").openStream()
+        streamToModel = ModelLoaderTest.class.getResourceAsStream("/model.csv")
         def modelLoader = new ModelLoader(streamToModel)
         model = modelLoader.load()
     }
@@ -28,14 +27,10 @@ public class ModelLoaderTest extends spock.lang.Specification {
         streamToModel.close()
     }
 
-    def "should return not null model"() {
-        expect:
-        model != null
-    }
-
     def "should contain proper names"() {
+        when:
         def persons = model.getPersons()
-        expect:
+        then:
         persons.containsAll([a, b, c, d])
     }
 
@@ -62,22 +57,22 @@ public class ModelLoaderTest extends spock.lang.Specification {
         !model.canGive(d, d)
     }
 
-    def "should parse line"(){
+    def "should parse line"() {
         given:
-        InputStream inputStream = new MockFor(InputStream).proxyInstance()
+        InputStream inputStream = [:] as InputStream
         ModelLoader modelLoader = new ModelLoader(inputStream)
-        def getters = [a,b,c,d]
-        Model model = new Model([])
+        def getters = [a, b, c, d]
+        Model model = new Model()
         def giver = a
 
         when:
-        modelLoader.parseLine(model,giver,getters,"A;0;1;0;1")
+        modelLoader.parseLine(model, giver, getters, "A;0;1;0;1")
 
         then:
-        !model.canGive(giver,a)
-        model.canGive(giver,b)
-        !model.canGive(giver,c)
-        model.canGive(giver,d)
+        !model.canGive(giver, a)
+        model.canGive(giver, b)
+        !model.canGive(giver, c)
+        model.canGive(giver, d)
     }
 
 }

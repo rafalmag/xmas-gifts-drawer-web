@@ -1,7 +1,7 @@
 package pl.rafalmag.xmasgiftsdrawer
 
-import com.google.common.collect.Table
 import com.google.common.collect.HashBasedTable
+import com.google.common.collect.Table
 
 /**
  * User: rafalmag
@@ -10,7 +10,11 @@ import com.google.common.collect.HashBasedTable
  */
 class Model {
 
-    Table<Person, Person, Boolean> table
+    Table<Person /*giver*/, Person/*getter*/, Boolean> table
+
+    public Model() {
+        table = HashBasedTable.create();
+    }
 
     public Model(List<Person> persons) {
         table = HashBasedTable.create(persons.size(),persons.size());
@@ -33,15 +37,15 @@ class Model {
     }
 
     boolean canGive(Person giver, Person getter) {
-        table.get(giver,getter)
+        table.get(giver, getter)
     }
 
     Set<Person> getPersons() {
-               table.rowKeySet();
+        table.rowKeySet();
     }
 
     void setCanGive(Person giver, Person getter) {
-        table.put(giver,getter,true);
+        table.put(giver, getter, true);
     }
 
     void setCannotGive(Person giver, Person getter) {

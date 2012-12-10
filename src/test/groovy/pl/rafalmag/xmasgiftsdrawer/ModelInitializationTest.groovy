@@ -1,12 +1,8 @@
 package pl.rafalmag.xmasgiftsdrawer
 
-import org.fest.assertions.api.Assertions
 import spock.lang.Shared
 
-import static org.fest.assertions.api.Assertions.assertThat
-
-
-class ModelInitializationTest extends spock.lang.Specification {
+public class ModelInitializationTest extends spock.lang.Specification {
 
     @Shared
     def a = new Person("A")
@@ -33,7 +29,7 @@ class ModelInitializationTest extends spock.lang.Specification {
 
     def "anyone should not give himself a gift"() {
         expect:
-        ! model.canGive(giver,getter);
+        !model.canGive(giver, getter);
 
         where:
         giver | getter
@@ -42,11 +38,11 @@ class ModelInitializationTest extends spock.lang.Specification {
         c     | c
     }
 
-    def "should return persons"(){
+    def "should return persons"() {
         def persons = model.getPersons();
         expect:
-        persons.containsAll([a,b,c])
+        persons.containsAll([a, b, c])
     }
-
-
 }
+
+
