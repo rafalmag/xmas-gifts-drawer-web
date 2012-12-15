@@ -15,11 +15,8 @@ class Model {
     }
 
     private void initTable(List<Person> persons) {
-        persons.each { person ->
-            table.put(person, person, false);
-        }
-        table.columnKeySet().each { getter ->
-            table.rowKeySet().each { giver ->
+        persons.each {giver->
+            persons.each {getter->
                 if (giver.equals(getter)) {
                     setCannotGive(giver, getter);
                 } else {
