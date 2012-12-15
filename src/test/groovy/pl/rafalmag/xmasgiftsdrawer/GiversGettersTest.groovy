@@ -24,7 +24,6 @@ class GiversGettersTest extends Specification {
         GiversGetters giversGetters = new GiversGetters([new GiverGetter(a, b), new GiverGetter(b, a)])
         Model model = new Model([a, b])
         expect:
-        giversGetters.nobodyBuysForHimself()
         giversGetters.isValid(model)
     }
 
@@ -65,5 +64,18 @@ class GiversGettersTest extends Specification {
                 new GiversGetters([new GiverGetter(a, b), new GiverGetter(b, c), new GiverGetter(c, d), new GiverGetter(d, a)]),
                 new GiversGetters([new GiverGetter(a, b), new GiverGetter(b, a)])
         ]
+    }
+
+    def "should be invalid if violates model's restrictions"() {
+        given:
+        Model model = new Model([a, b])
+        model.setCannotGive(a,b)
+        GiversGetters giversGetters = new GiversGetters([new GiverGetter(a, b), new GiverGetter(b, a)])
+        expect:
+        giversGetters.everybodyGivesAndGets()
+        giversGetters.nobodyBuysForHimself()
+        giversGetters.quantityMatches(model)
+        !giversGetters.respectsModelsRestrictions(model)
+        !giversGetters.isValid(model)
     }
 }
