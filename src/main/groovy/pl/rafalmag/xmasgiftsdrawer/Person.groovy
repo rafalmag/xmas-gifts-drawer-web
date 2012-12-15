@@ -6,4 +6,8 @@ import groovy.transform.Immutable
 class Person {
 
     final String name;
+
+    String toString(){
+           return name;
+    }
 }
