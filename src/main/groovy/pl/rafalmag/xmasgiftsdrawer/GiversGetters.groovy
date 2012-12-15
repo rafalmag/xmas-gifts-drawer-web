@@ -10,7 +10,7 @@ class GiversGetters {
     final List<GiverGetter> pairs;
 
     public boolean isValid(Model model) {
-        nobodyBuysForHimself() && everybodyGivesAndGets() && quantityMatches(model) && respectsModelsRestrictions(model)
+        return nobodyBuysForHimself() && everybodyGivesAndGets() && quantityMatches(model) && respectsModelsRestrictions(model)
     }
 
     boolean nobodyBuysForHimself() {

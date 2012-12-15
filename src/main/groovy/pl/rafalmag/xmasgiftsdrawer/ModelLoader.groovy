@@ -54,7 +54,7 @@ class ModelLoader {
                     model.setCannotGive(giver, getter)
                     break;
                 default:
-                    //TODO my exception
+                    //TODO my exception + test
                     throw new IOException("Value: "+value + " in line: "+line+" not supported.")
             }
         }
