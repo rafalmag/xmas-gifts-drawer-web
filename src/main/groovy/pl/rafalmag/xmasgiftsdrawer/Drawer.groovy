@@ -2,7 +2,7 @@ package pl.rafalmag.xmasgiftsdrawer
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
-import org.fest.util.Lists
+import com.google.common.collect.Lists
 
 import java.util.concurrent.TimeUnit
 
