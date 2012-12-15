@@ -1,8 +1,9 @@
 package pl.rafalmag.xmasgiftsdrawer
 
 import spock.lang.Shared
+import spock.lang.Specification;
 
-public class ModelLoaderTest extends spock.lang.Specification {
+public class ModelLoaderTest extends Specification {
 
     @Shared
     def a = new Person("A")

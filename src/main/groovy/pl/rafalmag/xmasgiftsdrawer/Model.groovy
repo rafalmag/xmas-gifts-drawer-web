@@ -4,11 +4,6 @@ import com.google.common.collect.HashBasedTable
 import com.google.common.collect.Table
 import groovy.util.logging.Slf4j
 
-/**
- * User: rafalmag
- * Date: 09.12.12
- * Time: 13:31
- */
 @Slf4j
 class Model {
 
@@ -51,17 +46,17 @@ class Model {
     }
 
     public boolean isValid() {
-        isValidOnDiagonal() && isValidEveryoneGetsGift() && isValidEveryoneGivesGift()
+        return isValidOnDiagonal() && isValidEveryoneGetsGift() && isValidEveryoneGivesGift()
     }
 
     def boolean isValidOnDiagonal() {
-        def diagonals = getPersons().findAll {
+        Set<Person> canGiveToHimself = getPersons().findAll {
             canGive(it, it)
         }
-        if (diagonals.isEmpty()) {
+        if (canGiveToHimself.isEmpty()) {
             true
         } else {
-            log.warn("{} could buy gifts for themselves", diagonals)
+            log.warn("{} could buy gifts for themselves", canGiveToHimself)
             false
         }
     }
