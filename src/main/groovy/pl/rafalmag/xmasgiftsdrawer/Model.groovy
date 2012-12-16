@@ -31,7 +31,7 @@ class Model {
     }
 
     public Set<Person> getPersons() {
-        table.rowKeySet();
+        table.rowKeySet().asImmutable()
     }
 
     public void setCanGive(Person giver, Person getter) {

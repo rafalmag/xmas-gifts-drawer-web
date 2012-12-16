@@ -1,10 +1,11 @@
 package pl.rafalmag.xmasgiftsdrawer
 
+import com.google.common.collect.Lists
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
-import com.google.common.collect.Lists
 
 import java.util.concurrent.TimeUnit
+import java.util.concurrent.TimeoutException
 
 @ToString
 @EqualsAndHashCode
@@ -17,7 +18,7 @@ class Drawer {
         this.random = random;
     }
 
-    GiversGetters draw(long timeout = 5, TimeUnit timeUnit = TimeUnit.SECONDS) {
+    GiversGetters draw(long timeout = 5, TimeUnit timeUnit = TimeUnit.SECONDS) throws TimeoutException, InterruptedException {
         Timeout timeoutCounter = new Timeout(timeout, timeUnit);
         def gg
         while (gg == null || !gg.isValid(model)) {

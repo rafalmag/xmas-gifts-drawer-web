@@ -81,7 +81,7 @@ class DrawerTest extends Specification {
         when:
         feature.get()
         then:
-        ExecutionException e = thrown(ExecutionException)
+        ExecutionException e = thrown()
         e.cause.cause instanceof InterruptedException
     }
 
@@ -96,7 +96,7 @@ class DrawerTest extends Specification {
         when:
         feature.get()
         then:
-        ExecutionException e = thrown(ExecutionException)
+        ExecutionException e = thrown()
         e.cause.cause instanceof TimeoutException
         expect:
         executor.shutdownNow().isEmpty()
