@@ -12,15 +12,6 @@ import java.util.concurrent.TimeoutException
 
 class DrawerTest extends Specification {
 
-//    Model model;
-//
-//    def setup() {
-//        def streamToModel = ModelLoaderTest.class.getResourceAsStream("/model.csv")
-//        def modelLoader = new ModelLoader(streamToModel)
-//        model = modelLoader.load()
-//        streamToModel.close()
-//    }
-
     def "should generate GiverGetter aggregator"() {
         given:
         def a = new Person("A")
@@ -61,25 +52,30 @@ class DrawerTest extends Specification {
         def drawer = new Drawer(model, new Random(2));
         def oldGiversGetters  =null
         def giversGetters=null
+        when:
         while (oldGiversGetters == null || giversGetters == oldGiversGetters) {
             oldGiversGetters = giversGetters
             giversGetters = drawer.draw()
         }
-        expect:
+        then:
         giversGetters != oldGiversGetters
     }
 
     @Timeout(value = 5, unit = TimeUnit.SECONDS)
     def "draw should be able to be interrupted if cannot get solution"() {
         given:
-        def drawer = new Drawer(new Model([new Person("A")]));
+        def modelValidator = {true} as IModelValidator
+        def model = new Model([new Person("A")],modelValidator)
+        def drawer = new Drawer(model);
         def executor = Executors.newSingleThreadExecutor()
+
+        when:
         def feature = executor.submit({
             drawer.draw()
         })
         executor.shutdownNow()
-        when:
         feature.get()
+
         then:
         ExecutionException e = thrown()
         e.cause.cause instanceof InterruptedException
@@ -88,13 +84,16 @@ class DrawerTest extends Specification {
     @Timeout(value = 10, unit = TimeUnit.SECONDS)
     def "should timeout if cannot get solution"(){
         given:
-        def drawer = new Drawer(new Model([new Person("A")]));
+        def modelValidator = {true} as IModelValidator
+        def model = new Model([new Person("A")],modelValidator)
+        def drawer = new Drawer(model);
         def executor = Executors.newSingleThreadExecutor()
-        def feature = executor.submit({
-            drawer.draw(1,TimeUnit.MILLISECONDS)
-        })
+
         when:
-        feature.get()
+        executor.submit({
+            drawer.draw(1,TimeUnit.MILLISECONDS)
+        }).get()
+
         then:
         ExecutionException e = thrown()
         e.cause.cause instanceof TimeoutException

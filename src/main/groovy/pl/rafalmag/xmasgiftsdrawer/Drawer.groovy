@@ -14,7 +14,11 @@ class Drawer {
     final private Random random;
 
     public Drawer(Model model, Random random = new Random()) {
-        this.model = model;
+        if (model.isValid()) {
+            this.model = model;
+        } else {
+            throw new IllegalArgumentException("model is invalid")
+        }
         this.random = random;
     }
 
