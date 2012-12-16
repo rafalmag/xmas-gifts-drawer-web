@@ -2,25 +2,26 @@ package pl.rafalmag.xmasgiftsdrawer
 
 import com.google.common.collect.HashBasedTable
 import com.google.common.collect.Table
-import groovy.util.logging.Slf4j
 
-@Slf4j
 class Model {
 
     private final Table<Person /*giver*/, Person/*getter*/, Boolean> table
+    private final IModelValidator validator
 
-    public Model(List<Person> persons=[]) {
-        table = HashBasedTable.create(persons.size(), persons.size());
+
+    public Model(List<Person> persons = [], IModelValidator modelValidator = new ModelValidator()) {
+        table = HashBasedTable.create(persons.size(), persons.size())
+        this.validator = modelValidator
         initTable(persons)
     }
 
     private void initTable(List<Person> persons) {
-        persons.each {giver->
-            persons.each {getter->
+        persons.each { giver ->
+            persons.each { getter ->
                 if (giver.equals(getter)) {
-                    setCannotGive(giver, getter);
+                    setCannotGive(giver, getter)
                 } else {
-                    setCanGive(giver, getter);
+                    setCanGive(giver, getter)
                 }
             }
         }
@@ -31,48 +32,38 @@ class Model {
     }
 
     public Set<Person> getPersons() {
-        table.rowKeySet().asImmutable()
+        def persons = [] as SortedSet
+        persons.addAll(table.rowKeySet())
+        persons.addAll(table.columnKeySet())
+        persons
     }
 
     public void setCanGive(Person giver, Person getter) {
-        table.put(giver, getter, true);
+        table.put(giver, getter, true)
     }
 
     public void setCannotGive(Person giver, Person getter) {
-        table.put giver, getter, false;
+        table.put giver, getter, false
     }
 
     public boolean isValid() {
-        return isValidOnDiagonal() && isValidEveryoneGetsGift() && isValidEveryoneGivesGift()
+        validator.isValid(this)
     }
 
-    def boolean isValidOnDiagonal() {
-        Set<Person> canGiveToHimself = getPersons().findAll {
-            canGive(it, it)
+    public String toString() {
+        String toString = " ;"
+        getPersons().each {
+            toString += it.toString() + ";"
         }
-        if (canGiveToHimself.isEmpty()) {
-            true
-        } else {
-            log.warn("{} could buy gifts for themselves", canGiveToHimself)
-            false
+        toString += "\n"
+        getPersons().each { giver ->
+            toString += giver.toString() + ";"
+            getPersons().each { getter ->
+                def canGive = canGive(giver, getter) ? "1" : "0"
+                toString += canGive + ";"
+            }
+            toString += "\n"
         }
-    }
-
-    boolean isValidEveryoneGetsGift() {
-        getPersons().findAll{getter->
-            def firstGiverForGetter = getPersons().find {giver->
-                canGive(giver,getter)
-            }
-            firstGiverForGetter  == null
-        }.isEmpty()
-    }
-
-    boolean isValidEveryoneGivesGift() {
-        getPersons().findAll{giver->
-            def firstGetterForGiver = getPersons().find {getter->
-                canGive(giver,getter)
-            }
-            firstGetterForGiver  == null
-        }.isEmpty()
+        toString
     }
 }

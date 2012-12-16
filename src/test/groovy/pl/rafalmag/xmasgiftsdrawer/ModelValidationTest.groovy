@@ -1,58 +1,53 @@
 package pl.rafalmag.xmasgiftsdrawer
-/**
- * User: rafalmag
- * Date: 10.12.12
- * Time: 11:56
- */
+
+import spock.lang.Shared
+
 class ModelValidationTest extends spock.lang.Specification {
+
+    @Shared
+    def a = new Person("A")
+    @Shared
+    def b = new Person("B")
+    @Shared
+    def c = new Person("C")
+    @Shared
+    def modelValidator = new ModelValidator()
 
     def "initialized model with more than one people should be valid"() {
         given:
-        def a = new Person("A")
-        def b = new Person("B")
-        def c = new Person("C")
         def model = new Model([a, b, c])
         expect:
         model.isValid()
     }
 
-    def "if someone buys gift himself is not valid"(){
+    def "if someone buys gift himself is not valid"() {
         given:
-        def a = new Person("A")
-        def b = new Person("B")
-        def model = new Model([a, b])
-        model.setCanGive(b,b)
+        def model = new Model([a, b], modelValidator)
+        model.setCanGive(b, b)
         expect:
         !model.isValid()
-        !model.isValidOnDiagonal()
+        !ModelValidator.isValidOnDiagonal(model)
     }
 
-    def "one people model is invalid"(){
+    def "one people model is invalid"() {
         given:
-        def a = new Person("A")
-        def model = new Model([a])
+        def model = new Model([a],modelValidator)
         expect:
         !model.isValid()
-        !model.isValidEveryoneGetsGift()
-        !model.isValidEveryoneGivesGift()
+        !ModelValidator.isValidEveryoneGetsGift(model)
+        !ModelValidator.isValidEveryoneGivesGift(model)
     }
 
-    def "a gives 2 gifts, but b does not give any - invalid"(){
+    def "a gives 2 gifts, but b does not give any - invalid"() {
         given:
-        def a = new Person("A")
-        def b = new Person("B")
-        def c = new Person("C")
-        def model = new Model([a,b,c])
-//        model.setCanGive(a,b)
-//        model.setCanGive(a,c)
-//        model.setCanGive(c,a)
-//        model.setCanGive(c,b)
+        def model = new Model([],modelValidator)
+        model.setCanGive(a,b)
+        model.setCanGive(a,c)
+        model.setCanGive(c,a)
 
-        model.setCannotGive(b,a)
-        model.setCannotGive(b,c)
         expect:
         !model.isValid()
-        model.isValidEveryoneGetsGift()
-        !model.isValidEveryoneGivesGift()
+        ModelValidator.isValidEveryoneGetsGift(model)
+        !ModelValidator.isValidEveryoneGivesGift(model)
     }
 }
