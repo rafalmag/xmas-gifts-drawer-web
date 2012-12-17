@@ -3,7 +3,7 @@ package pl.rafalmag.xmasgiftsdrawer
 import groovy.transform.Immutable
 
 @Immutable
-class Person implements Comparable<Person>{
+class Person implements Comparable<Object>{
 
     final String name;
 
@@ -12,7 +12,7 @@ class Person implements Comparable<Person>{
     }
 
     @Override
-    int compareTo(Person o) {
+    int compareTo(Object o) {
         return name.compareTo(o.name)
     }
 }

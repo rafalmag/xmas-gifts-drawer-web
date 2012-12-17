@@ -1,40 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/web" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/groovy" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/groovy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/groovy" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/groovy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/groovy" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="groovy-2.0.5" level="application" />
-    <orderEntry type="library" name="groovyfx-0.3" level="project" />
-    <orderEntry type="library" name="guava-13.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="fest-assert-core-2.0M8" level="project" />
-    <orderEntry type="module-library">
-      <library name="jfxrt">
-        <CLASSES>
-          <root url="jar://C:/Program Files/Java/jdk1.7.0_09/jre/lib/jfxrt.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="library" scope="TEST" name="fest-util-1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.gmaven.runtime:gmaven-runtime-2.0:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.gmaven.feature:gmaven-feature-support:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.gmaven.feature:gmaven-feature-api:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.gmaven.runtime:gmaven-runtime-support:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.gmaven.runtime:gmaven-runtime-api:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.gshell:gshell-io:2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.gossip:gossip:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:3.0" level="project" />
+    <orderEntry type="library" name="Maven: com.thoughtworks.qdox:qdox:1.12" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-all:2.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.ant:ant:1.8.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.ant:ant-launcher:1.8.2" level="project" />
+    <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: com.vaadin:vaadin:6.8.5" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.0.7" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.0.7" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.6" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:13.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.easytesting:fest-assert-core:2.0M8" level="project" />
     <orderEntry type="library" name="Maven: org.easytesting:fest-util:1.2.3" level="project" />
-    <orderEntry type="library" name="vaadin-6.8.5" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/com.vaadin/vaadin/6.8.5/jar/cd6320f8cf84a8da2ec236b2f0d4eb303e093c13/vaadin-6.8.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/com.vaadin/vaadin/6.8.5/source/6eda76b66906064bfb92108c3c903f3c25b7709f/vaadin-6.8.5-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/ch.qos.logback/logback-classic/1.0.7/jar/7c56c1e6000fa1c2e71b88b09435d9a5710b8d66/logback-classic-1.0.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/ch.qos.logback/logback-classic/1.0.7/source/e3e0212390972b91456af0568801127ae0a749f9/logback-classic-1.0.7-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/com.google.guava/guava/13.0.1/jar/d6f22b1e60a2f1ef99e22c9f5fde270b2088365/guava-13.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/com.google.guava/guava/13.0.1/source/ea42e17f75a65e72d12cd311b7d1e7d6356bbb3f/guava-13.0.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.easytesting/fest-assert-core/2.0M8/jar/7cba93bcf78ab02e2561ad303deb28c5c4dde7e7/fest-assert-core-2.0M8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.easytesting/fest-assert-core/2.0M8/source/db4ed0a4a67ffd91597c432378d227469b988865/fest-assert-core-2.0M8-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/ch.qos.logback/logback-core/1.0.7/jar/df9279b212f62a7bb96e645e643eb5c4b675ee64/logback-core-1.0.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/ch.qos.logback/logback-core/1.0.7/source/1d7fc71c714efa1b71be26b513adb1a889f4ab3c/logback-core-1.0.7-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.slf4j/slf4j-api/1.6.6/jar/ce53b0a0e2cfbb27e8a59d38f79a18a5c6a8d2b0/slf4j-api-1.6.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.slf4j/slf4j-api/1.6.6/source/bcd0e21b1572960cefd449f8a16efab5b6b8e644/slf4j-api-1.6.6-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.easytesting/fest-util/1.2.3/jar/a87a30cf1c26aa578a9165f2019f4293a0a575b6/fest-util-1.2.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.easytesting/fest-util/1.2.3/source/1e3117b177f0e10afa7ce2a96ef9cdb8a510a8b8/fest-util-1.2.3-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
 
