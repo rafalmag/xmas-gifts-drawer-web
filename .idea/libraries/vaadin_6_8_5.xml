@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="vaadin-6.8.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin/6.8.5/vaadin-6.8.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
