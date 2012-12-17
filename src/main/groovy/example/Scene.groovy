@@ -1,4 +1,4 @@
-package main.groovy.example;
+package example;
 
 import static groovyx.javafx.GroovyFX.start
 
