@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/xmas.iml" filepath="$PROJECT_DIR$/xmas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xmas-vaadin/xmas-vaadin.iml" filepath="$PROJECT_DIR$/xmas-vaadin/xmas-vaadin.iml" />
     </modules>
   </component>
 </project>
