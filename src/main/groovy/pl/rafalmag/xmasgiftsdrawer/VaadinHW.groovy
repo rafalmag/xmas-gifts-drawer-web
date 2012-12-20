@@ -19,6 +19,7 @@ class VaadinHW extends Application {
     void init() {
         Model model = new Model(ImmutableList.of(new Person("A"), new Person("B")), new ModelValidator());
 
+        setTheme("mytheme")
         // Main window is the primary browser window
         final Window main = new Window("Hello window")
         setMainWindow(main)
@@ -32,8 +33,7 @@ class VaadinHW extends Application {
 
     static Table initTable() {
         Table table = new Table("Table with Cell Styles");
-        table.addStyleName("checkerboard");
-
+        table.addStyleName("checkerboard")
 
         IndexedContainer container = initContainer()
 
@@ -41,27 +41,27 @@ class VaadinHW extends Application {
 
         table.setRowHeaderMode(Table.ROW_HEADER_MODE_ID)
         table.setColumnHeaderMode(Table.COLUMN_HEADER_MODE_ID)
-        table.setPageLength(8);
+        table.setPageLength(8)
 
 // Set cell style generator
         table.setCellStyleGenerator(new Table.CellStyleGenerator() {
             public String getStyle(Object itemId, Object propertyId) {
-                // Row style setting, not relevant in this example.
+                // Row style setting
                 if (propertyId == null)
-                    return "green"; // Will not actually be visible
+                    return "green"; // Will not actually be visible, becase I reassign it later
 
-                int row = ((Integer) itemId).intValue();
-                int col = Integer.parseInt((String) propertyId);
+                int row = ((Integer) itemId).intValue()
+                int col = Integer.parseInt((String) propertyId)
 
                 // The first column.
                 if (col == 0)
-                    return "rowheader";
+                    return "rowheader"
 
                 // Other cells.
                 if ((row + col) % 2 == 0)
-                    return "black";
+                    return "black"
                 else
-                    return "white";
+                    return "white"
             }
         })
         table
@@ -73,7 +73,7 @@ class VaadinHW extends Application {
 // IDs of the container are integers so we can determine the
 // column number easily.
 
-        def properties = (1..8).step(1).collect { "" + it }
+        def properties = (1..8).step(1).collect { ""+it }
         for (int i = 0; i < 8; i++) {
             String property = properties[i]
             String value = String.valueOf((char) (65 + i))

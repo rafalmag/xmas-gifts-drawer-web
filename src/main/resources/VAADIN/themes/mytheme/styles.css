@@ -1,3 +1,5 @@
+@import "../reindeer/styles.css";
+
 /* Center the text in header. */
 .v-table-header-cell {
     text-align: center;
@@ -12,8 +14,9 @@
     height: 28px;
 }
 
-/* Style specifically for the row header cells. */
-.v-table-cell-content-rowheader {
+/* Style specifically for the row/column header cells. */
+/* TODO .v-table-header-cell - too generic */
+.v-table-header-cell-rowheader,.v-table-header-cell,.v-table-cell-content-rowheader {
     background: #E7EDF3
     url(../default/table/img/header-bg.png) repeat-x scroll 0 0;
 }
