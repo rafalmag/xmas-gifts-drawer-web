@@ -1,34 +1,19 @@
 @import "../reindeer/styles.css";
 
-/* Center the text in header. */
-.v-table-header-cell {
-    text-align: center;
-}
-
-/* Basic style for all cells. */
-.v-table-checkerboard .v-table-cell-content {
+/* column header */
+.v-table-model td {
+    background: #E7EDF3;
     text-align: center;
     vertical-align: middle;
-    padding-top: 12px;
-    width: 20px;
-    height: 28px;
 }
 
-/* Style specifically for the row/column header cells. */
-/* TODO .v-table-header-cell - too generic */
-.v-table-header-cell-rowheader,.v-table-header-cell,.v-table-cell-content-rowheader {
-    background: #E7EDF3
-    url(../default/table/img/header-bg.png) repeat-x scroll 0 0;
+/*cell*/
+.v-table-model .v-table-cell-content {
+    background: #40f33e;
 }
 
-/* Style specifically for the "white" cells. */
-.v-table-cell-content-white {
-    background: white;
-    color: black;
+/* row header */
+.v-table-model .v-table-cell-content-rowheader{
+    background: #f35349;
 }
 
-/* Style specifically for the "black" cells. */
-.v-table-cell-content-black {
-    background: black;
-    color: white;
-}
