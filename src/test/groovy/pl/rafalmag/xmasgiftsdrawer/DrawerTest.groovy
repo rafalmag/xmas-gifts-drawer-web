@@ -78,7 +78,7 @@ class DrawerTest extends Specification {
 
         then:
         ExecutionException e = thrown()
-        e.cause.cause instanceof InterruptedException
+        e.cause instanceof InterruptedException
     }
 
     @Timeout(value = 10, unit = TimeUnit.SECONDS)
@@ -96,7 +96,7 @@ class DrawerTest extends Specification {
 
         then:
         ExecutionException e = thrown()
-        e.cause.cause instanceof TimeoutException
+        e.cause instanceof TimeoutException
         expect:
         executor.shutdownNow().isEmpty()
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+<module type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="web" name="Web">
       <configuration>
@@ -37,13 +37,11 @@
     <orderEntry type="library" exported="" name="swing-worker-1.1" level="project" />
     <orderEntry type="library" exported="" name="servlet-api-2.4" level="project" />
     <orderEntry type="library" exported="" name="jsilhouette-geom-0.4" level="project" />
-    <orderEntry type="library" exported="" name="groovy-groovydoc-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="forms-1.2.1" level="project" />
     <orderEntry type="library" exported="" name="netty-3.5.7.Final" level="project" />
     <orderEntry type="library" exported="" name="slf4j-api-1.6.6" level="project" />
     <orderEntry type="library" exported="" name="jsp-api-2.0" level="project" />
     <orderEntry type="library" exported="" name="antlr-2.7.7" level="project" />
-    <orderEntry type="library" exported="" name="groovy-testng-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="batik-codec-1.7" level="project" />
     <orderEntry type="library" exported="" name="gant-1.9.8_groovy-2.0.0" level="project" />
     <orderEntry type="library" exported="" name="gpars-1.0-beta-3" level="project" />
@@ -52,14 +50,11 @@
     <orderEntry type="library" exported="" name="swingx-painters-1.6.3" level="project" />
     <orderEntry type="library" exported="" name="gmock-0.8.2" level="project" />
     <orderEntry type="library" exported="" name="qdox-1.12" level="project" />
-    <orderEntry type="library" exported="" name="groovy-groovysh-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="batik-xml-1.7" level="project" />
     <orderEntry type="library" exported="" name="groovyserv-0.10" level="project" />
     <orderEntry type="library" exported="" name="mac_widgets-0.9.5" level="project" />
     <orderEntry type="library" exported="" name="swingx-graphics-1.6.3" level="project" />
-    <orderEntry type="library" exported="" name="groovy-sql-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="jsr166y-1.7.0" level="project" />
-    <orderEntry type="library" exported="" name="groovy-test-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="asm-4.0" level="project" />
     <orderEntry type="library" exported="" name="jide-oss-2.10.2" level="project" />
     <orderEntry type="library" exported="" name="swingx-common-1.6.3" level="project" />
@@ -68,7 +63,6 @@
     <orderEntry type="library" exported="" name="commons-logging-1.1.1" level="project" />
     <orderEntry type="library" exported="" name="scriptom-1.6.0" level="project" />
     <orderEntry type="library" exported="" name="batik-anim-1.7" level="project" />
-    <orderEntry type="library" exported="" name="groovy-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="ant-junit-1.8.4" level="project" />
     <orderEntry type="library" exported="" name="hamcrest-core-1.1" level="project" />
     <orderEntry type="library" exported="" name="gfxbuilder-swingx-0.6" level="project" />
@@ -76,10 +70,8 @@
     <orderEntry type="library" exported="" name="xswingx-0.2" level="project" />
     <orderEntry type="library" exported="" name="batik-bridge-1.7" level="project" />
     <orderEntry type="library" exported="" name="batik-awt-util-1.7" level="project" />
-    <orderEntry type="library" exported="" name="groovy-swing-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="jline-1.0" level="project" />
     <orderEntry type="library" exported="" name="scriptom-wbem-tlb-1.6.0" level="project" />
-    <orderEntry type="library" exported="" name="groovy-docgenerator-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="asm-tree-4.0" level="project" />
     <orderEntry type="library" exported="" name="swingx-core-1.6.3" level="project" />
     <orderEntry type="library" exported="" name="scriptom-sapi-tlb-1.6.0" level="project" />
@@ -88,13 +80,10 @@
     <orderEntry type="library" exported="" name="scriptom-scripting-tlb-1.6.0" level="project" />
     <orderEntry type="library" exported="" name="batik-ext-1.7" level="project" />
     <orderEntry type="library" exported="" name="macwidgetsbuilder-0.5" level="project" />
-    <orderEntry type="library" exported="" name="groovy-templates-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="sac-1.3" level="project" />
     <orderEntry type="library" exported="" name="batik-gui-util-1.7" level="project" />
     <orderEntry type="library" exported="" name="fest-util-1.2.3" level="project" />
-    <orderEntry type="library" exported="" name="groovy-bsf-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="asm-commons-4.0" level="project" />
-    <orderEntry type="library" exported="" name="groovy-json-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="guava-13.0.1" level="project" />
     <orderEntry type="library" exported="" name="formsrt-2.1.0M1" level="project" />
     <orderEntry type="library" exported="" name="flamingo-4.1" level="project" />
@@ -107,15 +96,12 @@
     <orderEntry type="library" exported="" name="jcsp-1.1-rc5" level="project" />
     <orderEntry type="library" exported="" name="jna-3.2.7" level="project" />
     <orderEntry type="library" exported="" name="timingframework-1.0" level="project" />
-    <orderEntry type="library" exported="" name="groovy-console-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="ant-antlr-1.8.4" level="project" />
-    <orderEntry type="library" exported="" name="groovy-servlet-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="swingx-plaf-1.6.3" level="project" />
     <orderEntry type="library" exported="" name="ant-launcher-1.8.4" level="project" />
     <orderEntry type="library" exported="" name="xstream-1.4.2" level="project" />
     <orderEntry type="library" exported="" name="swingxbuilder-0.2" level="project" />
     <orderEntry type="library" exported="" name="vaadin-6.8.5" level="project" />
-    <orderEntry type="library" exported="" name="groovy-ant-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="batik-extension-1.7" level="project" />
     <orderEntry type="library" exported="" name="batik-css-1.7" level="project" />
     <orderEntry type="library" exported="" name="batik-parser-1.7" level="project" />
@@ -123,7 +109,6 @@
     <orderEntry type="library" exported="" name="batik-svggen-1.7" level="project" />
     <orderEntry type="library" exported="" name="flamingobuilder-0.5" level="project" />
     <orderEntry type="library" exported="" name="balloontip-20090102" level="project" />
-    <orderEntry type="library" exported="" name="groovy-xml-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="svg-salamander-1.1" level="project" />
     <orderEntry type="library" exported="" name="batik-script-1.7" level="project" />
     <orderEntry type="library" exported="" name="jacob-1.14.3" level="project" />
@@ -138,9 +123,7 @@
     <orderEntry type="library" exported="" name="easyb-0.9.8" level="project" />
     <orderEntry type="library" exported="" name="gfxbuilder-core-0.6" level="project" />
     <orderEntry type="library" exported="" name="tridentbuilder-0.6" level="project" />
-    <orderEntry type="library" exported="" name="groovy-jsr223-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="batik-transcoder-1.7" level="project" />
-    <orderEntry type="library" exported="" name="groovy-jmx-2.0.5" level="project" />
     <orderEntry type="library" exported="" name="abeilleformbuilder-3.0" level="project" />
     <orderEntry type="library" exported="" name="jidebuilder-5.0" level="project" />
     <orderEntry type="library" exported="" name="logback-classic-1.0.7" level="project" />
@@ -152,1093 +135,93 @@
     <orderEntry type="library" exported="" name="asm-util-4.0" level="project" />
     <orderEntry type="library" exported="" name="xmlpull-1.1.3.1" level="project" />
     <orderEntry type="library" exported="" name="swingx-autocomplete-1.6.3" level="project" />
+    <orderEntry type="library" exported="" name="groovy-2.1.1" level="application" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin/6.8.5/vaadin-6.8.5.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/com.vaadin/vaadin/6.8.5/jar/cd6320f8cf84a8da2ec236b2f0d4eb303e093c13/vaadin-6.8.5.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/com.vaadin/vaadin/6.8.5/source/6eda76b66906064bfb92108c3c903f3c25b7709f/vaadin-6.8.5-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.0.7/logback-classic-1.0.7.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/ch.qos.logback/logback-classic/1.0.7/jar/7c56c1e6000fa1c2e71b88b09435d9a5710b8d66/logback-classic-1.0.7.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/ch.qos.logback/logback-classic/1.0.7/source/e3e0212390972b91456af0568801127ae0a749f9/logback-classic-1.0.7-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/13.0.1/guava-13.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/com.google.guava/guava/13.0.1/jar/d6f22b1e60a2f1ef99e22c9f5fde270b2088365/guava-13.0.1.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/com.google.guava/guava/13.0.1/source/ea42e17f75a65e72d12cd311b7d1e7d6356bbb3f/guava-13.0.1-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/easytesting/fest-assert-core/2.0M8/fest-assert-core-2.0M8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.easytesting/fest-assert-core/2.0M8/jar/7cba93bcf78ab02e2561ad303deb28c5c4dde7e7/fest-assert-core-2.0M8.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.easytesting/fest-assert-core/2.0M8/source/db4ed0a4a67ffd91597c432378d227469b988865/fest-assert-core-2.0M8-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.0.7/logback-core-1.0.7.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.codehaus.groovy/groovy-all/2.1.1/jar/346ed02f8d626f54d0a9b5dd9a6d492881de0cdb/groovy-all-2.1.1.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.codehaus.groovy/groovy-all/2.1.1/source/4503923786b951df9a77ac876fdb885d5e907329/groovy-all-2.1.1-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/ch.qos.logback/logback-core/1.0.7/jar/df9279b212f62a7bb96e645e643eb5c4b675ee64/logback-core-1.0.7.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/ch.qos.logback/logback-core/1.0.7/source/1d7fc71c714efa1b71be26b513adb1a889f4ab3c/logback-core-1.0.7-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/easytesting/fest-util/1.2.3/fest-util-1.2.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.slf4j/slf4j-api/1.6.6/jar/ce53b0a0e2cfbb27e8a59d38f79a18a5c6a8d2b0/slf4j-api-1.6.6.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.slf4j/slf4j-api/1.6.6/source/bcd0e21b1572960cefd449f8a16efab5b6b8e644/slf4j-api-1.6.6-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/abeilleformbuilder-3.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.easytesting/fest-util/1.2.3/jar/a87a30cf1c26aa578a9165f2019f4293a0a575b6/fest-util-1.2.3.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/ant-1.8.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/ant-antlr-1.8.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/ant-junit-1.8.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/ant-launcher-1.8.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/antlr-2.7.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/asm-4.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/asm-analysis-4.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/asm-commons-4.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/asm-tree-4.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/asm-util-4.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/balloontip-20090102.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-anim-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-awt-util-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-bridge-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-codec-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-css-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-dom-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-ext-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-extension-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-gui-util-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-gvt-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-parser-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-script-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-svg-dom-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-svggen-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-swing-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-transcoder-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-util-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/batik-xml-1.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/bsf-2.4.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/commons-cli-1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/commons-logging-1.1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/cssbuilder-0.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/cssparser-0.9.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/easyb-0.9.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/flamingo-4.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/flamingobuilder-0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/forms-1.2.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/formsrt-2.1.0M1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/gant-1.9.8_groovy-2.0.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/gfxbuilder-core-0.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/gfxbuilder-svg-0.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/gfxbuilder-swingx-0.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/gmock-0.8.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/gpars-1.0-beta-3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-ant-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-bsf-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-console-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-docgenerator-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-groovydoc-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-groovysh-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-jmx-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-json-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-jsr223-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-servlet-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-sql-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-swing-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-templates-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-test-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-testng-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovy-xml-2.0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/groovyserv-0.10.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/hamcrest-core-1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/ivy-2.2.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/jacob-1.14.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/jansi-1.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/jcommander-1.12.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/jcsp-1.1-rc5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/jide-oss-2.10.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/jidebuilder-5.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/jline-1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/jna-3.2.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/jsilhouette-geom-0.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/jsp-api-2.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/jsr166y-1.7.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/junit-4.10.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/l2fprod-common-all-6.9.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/macwidgetsbuilder-0.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/mac_widgets-0.9.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/multiverse-core-0.7.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/netty-3.5.7.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/qdox-1.12.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/sac-1.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/scriptom-1.6.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/scriptom-ie-6-tlb-1.6.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/scriptom-office-2K3-tlb-1.6.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/scriptom-sapi-tlb-1.6.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/scriptom-scripting-tlb-1.6.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/scriptom-wbem-tlb-1.6.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/scriptom-wsh-tlb-1.6.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/servlet-api-2.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/spock-core-0.7-groovy-2.0-20120930.020057-22.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/svg-salamander-1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/swing-worker-1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/swingx-action-1.6.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/swingx-autocomplete-1.6.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/swingx-beaninfo-1.6.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/swingx-common-1.6.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/swingx-core-1.6.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/swingx-graphics-1.6.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/swingx-painters-1.6.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/swingx-plaf-1.6.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/swingxbuilder-0.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/swingxtrasbuilder-0.4.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/testng-6.5.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/timingframework-1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/trident-7.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/tridentbuilder-0.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/xml-apis-ext-1.3.04.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/xmlpull-1.1.3.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/xstream-1.4.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files (x86)/Groovy/Groovy-2.0.5/lib/xswingx-0.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.easytesting/fest-util/1.2.3/source/1e3117b177f0e10afa7ce2a96ef9cdb8a510a8b8/fest-util-1.2.3-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="" scope="RUNTIME">
@@ -1248,6 +231,39 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.spockframework/spock-core/0.7-groovy-2.0/jar/4de0b428de0c14b6eb6375d8174f71848cbfc1d7/spock-core-0.7-groovy-2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.spockframework/spock-core/0.7-groovy-2.0/source/19f1e62a5094604766f83e55a693b9cdac3b271a/spock-core-0.7-groovy-2.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.hamcrest/hamcrest-core/1.3/jar/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/org.hamcrest/hamcrest-core/1.3/source/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/junit/junit-dep/4.10/jar/64417b3bafdecd366afa514bd5beeae6c1f85ece/junit-dep-4.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-15/filestore/junit/junit-dep/4.10/source/2c7dad0a5eb1602c6fe6b43abec8ea35805b3ae4/junit-dep-4.10-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="TEST">
