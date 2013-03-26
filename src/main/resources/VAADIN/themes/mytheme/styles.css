@@ -1,5 +1,10 @@
 @import "../reindeer/styles.css";
 
+/* disable scrollbars */
+.v-table-model .v-scrollable {
+    overflow: hidden;
+}
+
 /* column header */
 .v-table-model td {
     background: #E7EDF3;
@@ -14,6 +19,6 @@
 
 /* row header */
 .v-table-model .v-table-cell-content-rowheader{
-    background: #f35349;
+    background: #E7EDF3;
 }
 

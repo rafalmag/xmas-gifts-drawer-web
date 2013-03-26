@@ -23,7 +23,7 @@ class MainWindow extends Application {
     }
 
     def Table initTable() {
-        Table table = new Table("Table with Model");
+        Table table = new Table("Table with Model")
         table.addStyleName("model")
 
         IndexedContainer container = initContainer(model)
@@ -35,7 +35,7 @@ class MainWindow extends Application {
     }
 
     static IndexedContainer initContainer(Model model) {
-        IndexedContainer container = new IndexedContainer();
+        IndexedContainer container = new IndexedContainer()
 
         model.getPersons().each {
             container.addContainerProperty(it, it.getClass(), it.name)
