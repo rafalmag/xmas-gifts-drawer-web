@@ -36,25 +36,25 @@ public class ModelLoaderTest extends Specification {
 
     def "should read can buy fields"() {
         expect:
-        !model.canGive(a, a)
+        !model.canGive(a, a) // seems obvious
         model.canGive(a, b)
         model.canGive(a, c)
         model.canGive(a, d)
 
         model.canGive(b, a)
-        !model.canGive(b, b)
-        !model.canGive(b, c) // cannot
+        !model.canGive(b, b) // seems obvious
+        !model.canGive(b, c) // special rule in model.csv
         model.canGive(b, d)
 
         model.canGive(c, a)
         model.canGive(c, b)
-        !model.canGive(c, c)
+        !model.canGive(c, c) // seems obvious
         model.canGive(c, d)
 
         model.canGive(d, a)
         model.canGive(d, b)
         model.canGive(d, c)
-        !model.canGive(d, d)
+        !model.canGive(d, d)  // seems obvious
     }
 
     def "should parse line"() {
