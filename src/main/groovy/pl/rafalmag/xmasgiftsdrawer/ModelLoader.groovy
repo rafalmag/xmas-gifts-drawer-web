@@ -20,7 +20,7 @@ class ModelLoader {
 
     def List<Person> parseHeader() {
         def header = readLine()
-        def names = Splitter.on(';').omitEmptyStrings().split(header)
+        Iterable<String> names = Splitter.on(';').trimResults().omitEmptyStrings().split(header)
         names.collect { name -> new Person(name) }
     }
 
