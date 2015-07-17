@@ -1,6 +1,7 @@
 apply plugin: 'idea'
 apply plugin: 'groovy'
 apply plugin: 'war'
+//apply from: 'http://plugins.jasoft.fi/vaadin-groovy.plugin'
 
 group = 'pl.rafalmag.xmas'
 version = '0.1'
@@ -8,30 +9,21 @@ version = '0.1'
 repositories {
 //    mavenLocal()
     mavenCentral()
-//    maven { url 'http://oss.sonatype.org/content/repositories/snapshots/' }
+    maven { url 'http://oss.sonatype.org/content/repositories/snapshots/' }
 }
 
 dependencies {
 //    compile gradleApi()
 //    groovy localGroovy()
-//    groovy 'org.codehaus.groovy:groovy-all:2.0.1'
-    groovy 'org.codehaus.groovy:groovy-all:2.1.1'
+    compile 'org.codehaus.groovy:groovy-all:2.3+'
+//    testCompile 'org.spockframework:spock-core:1.0-groovy-2.0-SNAPSHOT'
     testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
     testCompile 'org.hamcrest:hamcrest-core:1.3'
-//    testCompile 'org.spockframework:spock-core:1.0-groovy-2.0-SNAPSHOT'
-//	compile "org.codehaus.gmaven.runtime:gmaven-runtime-2.0:1.4"
-//	compile "org.codehaus.groovy:groovy-all:2.0.4"
-//    groovy fileTree(dir: 'C:\\Program Files (x86)\\Groovy\\groovy-sdk-2.1.1\\lib', include: '*.jar')
-
-    compile "com.vaadin:vaadin:6.8.5"
-    compile "ch.qos.logback:logback-classic:1.0.7"
-    compile "com.google.guava:guava:13.0.1"
-    compile "org.easytesting:fest-assert-core:2.0M8"
-}
-
-idea {
-    module {
-        scopes.TEST.plus+= configurations.detachedConfiguration(dependencies.create(files('src/test/resources')))
-        scopes.RUNTIME.plus+= configurations.detachedConfiguration(dependencies.create(files('src/main/resources')))
-    }
+//    compile "com.vaadin:vaadin:6.8.5"
+    compile 'com.vaadin:vaadin-server:7.1.7'
+    compile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile "ch.qos.logback:logback-classic:1.1.2"
+    compile "com.google.guava:guava:18+"
+//    compile "org.easytesting:fest-assert-core:2.0M8"
+    testCompile 'org.assertj:assertj-core:1.7.0'
 }

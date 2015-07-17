@@ -1,25 +1,27 @@
 package pl.rafalmag.xmasgiftsdrawer.gui
 
-import com.vaadin.Application
+import com.vaadin.annotations.Theme
 import com.vaadin.data.Item
 import com.vaadin.data.util.IndexedContainer
+import com.vaadin.server.VaadinRequest
 import com.vaadin.ui.Table
-import com.vaadin.ui.Window
+import com.vaadin.ui.UI
+import com.vaadin.ui.VerticalLayout
 import pl.rafalmag.xmasgiftsdrawer.Model
 import pl.rafalmag.xmasgiftsdrawer.ModelValidator
 import pl.rafalmag.xmasgiftsdrawer.Person
 
-class MainWindow extends Application {
+@Theme("mytheme")
+class MainWindow extends UI {
 
     final Model model = new Model([new Person("A"), new Person("B")], new ModelValidator())
 
     @Override
-    void init() {
-        setTheme("mytheme")
-        def mainWindow = new Window("Hello window")
-        setMainWindow(mainWindow)
-
-        mainWindow.addComponent(initTable())
+    void init(VaadinRequest request) {
+        println "init"
+        VerticalLayout view = new VerticalLayout();
+        view.addComponent(initTable())
+        setContent(view);
     }
 
     def Table initTable() {
