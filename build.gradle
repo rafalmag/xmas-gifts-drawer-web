@@ -1,20 +1,16 @@
 apply plugin: 'idea'
 apply plugin: 'groovy'
 apply plugin: 'war'
-//apply from: 'http://plugins.jasoft.fi/vaadin-groovy.plugin'
 
 group = 'pl.rafalmag.xmas'
 version = '0.1'
 
 repositories {
-//    mavenLocal()
     mavenCentral()
     maven { url 'http://oss.sonatype.org/content/repositories/snapshots/' }
 }
 
 dependencies {
-//    compile gradleApi()
-//    groovy localGroovy()
     compile 'org.codehaus.groovy:groovy-all:2.3+'
 //    testCompile 'org.spockframework:spock-core:1.0-groovy-2.0-SNAPSHOT'
     testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
