@@ -7,9 +7,9 @@
 
     <servlet>
         <servlet-name>myproject</servlet-name>
-        <servlet-class>com.vaadin.terminal.gwt.server.ApplicationServlet</servlet-class>
+        <servlet-class>com.vaadin.server.VaadinServlet</servlet-class>
         <init-param>
-            <param-name>application</param-name>
+            <param-name>UI</param-name>
             <param-value>pl.rafalmag.xmasgiftsdrawer.gui.MainWindow</param-value>
         </init-param>
     </servlet>

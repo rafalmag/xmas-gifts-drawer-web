@@ -1,6 +1,7 @@
 package pl.rafalmag.xmasgiftsdrawer.gui
 
 import com.vaadin.annotations.Theme
+import com.vaadin.annotations.Title
 import com.vaadin.data.Item
 import com.vaadin.data.util.IndexedContainer
 import com.vaadin.server.VaadinRequest
@@ -11,6 +12,7 @@ import pl.rafalmag.xmasgiftsdrawer.Model
 import pl.rafalmag.xmasgiftsdrawer.ModelValidator
 import pl.rafalmag.xmasgiftsdrawer.Person
 
+@Title("Hello window")
 @Theme("mytheme")
 class MainWindow extends UI {
 
