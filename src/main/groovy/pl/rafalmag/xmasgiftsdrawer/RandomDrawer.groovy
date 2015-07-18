@@ -10,7 +10,7 @@ import java.util.concurrent.TimeoutException
 
 @ToString
 @EqualsAndHashCode
-class RandomDrawer {
+class RandomDrawer implements Drawer {
     final Model model;
     final private Random random;
 
@@ -22,7 +22,7 @@ class RandomDrawer {
 
     GiversReceivers draw(long timeout = 5, TimeUnit timeUnit = TimeUnit.SECONDS) throws TimeoutException, InterruptedException {
         Timeout timeoutCounter = new Timeout(timeout, timeUnit);
-        def giversReceivers
+        GiversReceivers giversReceivers
         while (giversReceivers == null || !giversReceivers.isValid(model)) {
             timeoutCounter.checkTimeout();
             giversReceivers = drawRandomly();
