@@ -24,12 +24,12 @@ class Drawer {
 
     GiversReceivers draw(long timeout = 5, TimeUnit timeUnit = TimeUnit.SECONDS) throws TimeoutException, InterruptedException {
         Timeout timeoutCounter = new Timeout(timeout, timeUnit);
-        def gg
-        while (gg == null || !gg.isValid(model)) {
-            gg = drawRandomly();
+        def giversReceivers
+        while (giversReceivers == null || !giversReceivers.isValid(model)) {
+            giversReceivers = drawRandomly();
             timeoutCounter.checkTimeout();
         }
-        gg
+        giversReceivers
     }
 
     GiversReceivers drawRandomly() {

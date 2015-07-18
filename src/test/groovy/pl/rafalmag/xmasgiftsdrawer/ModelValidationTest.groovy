@@ -13,7 +13,7 @@ class ModelValidationTest extends spock.lang.Specification {
     @Shared
     def modelValidator = new ModelValidator()
 
-    def "initialized model with more than one people should be valid"() {
+    def "initialized model with more than one person should be valid"() {
         given:
         def model = new Model([a, b, c])
         expect:
@@ -29,12 +29,12 @@ class ModelValidationTest extends spock.lang.Specification {
         !ModelValidator.isValidOnDiagonal(model)
     }
 
-    def "one people model is invalid"() {
+    def "one person model is invalid"() {
         given:
         def model = new Model([a],modelValidator)
         expect:
         !model.isValid()
-        !ModelValidator.isValidEveryoneGetsGift(model)
+        !ModelValidator.isValidEveryoneReceivesGift(model)
         !ModelValidator.isValidEveryoneGivesGift(model)
     }
 
@@ -47,7 +47,7 @@ class ModelValidationTest extends spock.lang.Specification {
 
         expect:
         !model.isValid()
-        ModelValidator.isValidEveryoneGetsGift(model)
+        ModelValidator.isValidEveryoneReceivesGift(model)
         !ModelValidator.isValidEveryoneGivesGift(model)
     }
 }

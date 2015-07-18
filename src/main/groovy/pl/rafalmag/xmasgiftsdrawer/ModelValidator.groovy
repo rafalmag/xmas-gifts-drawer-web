@@ -7,7 +7,7 @@ class ModelValidator implements IModelValidator {
 
     @Override
     public boolean isValid(Model model) {
-        return isValidOnDiagonal(model) && isValidEveryoneGetsGift(model) && isValidEveryoneGivesGift(model)
+        return isValidOnDiagonal(model) && isValidEveryoneReceivesGift(model) && isValidEveryoneGivesGift(model)
     }
 
     static boolean isValidOnDiagonal(Model model) {
@@ -22,7 +22,7 @@ class ModelValidator implements IModelValidator {
         }
     }
 
-    static boolean isValidEveryoneGetsGift(Model model) {
+    static boolean isValidEveryoneReceivesGift(Model model) {
         model.getPersons().findAll { receiver ->
             def firstGiverForReceiver = model.getPersons().find { giver ->
                 model.canGive(giver, receiver)
