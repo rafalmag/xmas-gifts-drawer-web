@@ -69,7 +69,7 @@ class GiversReceiversTest extends Specification {
     def "should be invalid if violates model's restrictions"() {
         given:
         Model model = new Model([a, b])
-        model.setCannotGive(a,b)
+        model.setCannotGive(a, b)
         GiversReceivers giversReceivers = new GiversReceivers([new GiverReceiver(a, b), new GiverReceiver(b, a)])
         expect:
         giversReceivers.everybodyGivesAndGets()

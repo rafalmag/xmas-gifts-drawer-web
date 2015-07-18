@@ -7,7 +7,7 @@ import spock.lang.Specification
  * Date: 15.12.12
  * Time: 17:36
  */
-class GiverReceiverTest  extends Specification{
+class GiverReceiverTest extends Specification {
 
     def "should have giver and receiver fields"() {
         given:

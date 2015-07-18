@@ -52,12 +52,12 @@ class GiversReceivers {
 
     boolean respectsModelsRestrictions(Model model) {
         def violatesModelsRestrictions = pairs.findAll {
-            !model.canGive(it.giver,it.receiver)
+            !model.canGive(it.giver, it.receiver)
         }
-        if (violatesModelsRestrictions.isEmpty()){
+        if (violatesModelsRestrictions.isEmpty()) {
             true
-        }       else{
-            log.warn("GiversReceivers invalid, because {} violates model's restrictions",violatesModelsRestrictions)
+        } else {
+            log.warn("GiversReceivers invalid, because {} violates model's restrictions", violatesModelsRestrictions)
             false
         }
     }

@@ -5,11 +5,11 @@ import spock.lang.Specification
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 
-class TimeoutTest extends Specification{
+class TimeoutTest extends Specification {
 
-    def "should check timeout"(){
+    def "should check timeout"() {
         given:
-        def timeout = new Timeout(10,TimeUnit.MILLISECONDS)
+        def timeout = new Timeout(10, TimeUnit.MILLISECONDS)
         when:
         timeout.checkTimeout()
         then:
@@ -21,9 +21,9 @@ class TimeoutTest extends Specification{
         thrown(TimeoutException)
     }
 
-    def "should check also interrupted status"(){
+    def "should check also interrupted status"() {
         given:
-        def timeout = new Timeout(10,TimeUnit.SECONDS)
+        def timeout = new Timeout(10, TimeUnit.SECONDS)
         when:
         Thread.currentThread().interrupt()
         timeout.checkTimeout()

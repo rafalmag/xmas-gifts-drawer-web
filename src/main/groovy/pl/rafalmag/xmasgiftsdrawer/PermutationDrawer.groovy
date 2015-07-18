@@ -7,7 +7,7 @@ import groovy.stream.Stream
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 
-class PermutationDrawer implements Drawer{
+class PermutationDrawer implements Drawer {
     final Model model;
     final private Random random;
 

@@ -31,7 +31,7 @@ class ModelValidationTest extends spock.lang.Specification {
 
     def "one person model is invalid"() {
         given:
-        def model = new Model([a],modelValidator)
+        def model = new Model([a], modelValidator)
         expect:
         !model.isValid()
         !ModelValidator.isValidEveryoneReceivesGift(model)
@@ -40,10 +40,10 @@ class ModelValidationTest extends spock.lang.Specification {
 
     def "a gives 2 gifts, but b does not give any - invalid"() {
         given:
-        def model = new Model([],modelValidator)
-        model.setCanGive(a,b)
-        model.setCanGive(a,c)
-        model.setCanGive(c,a)
+        def model = new Model([], modelValidator)
+        model.setCanGive(a, b)
+        model.setCanGive(a, c)
+        model.setCanGive(c, a)
 
         expect:
         !model.isValid()

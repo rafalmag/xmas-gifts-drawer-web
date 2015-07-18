@@ -35,18 +35,18 @@ class ModelLoader {
     def parseValues(Model model, List<Person> persons) {
         persons.each { giver ->
             String line = readLine()
-            parseLine(model,giver,persons,line)
+            parseLine(model, giver, persons, line)
         }
         assert readLine() == null
     }
 
-    def static void parseLine(Model model, Person giver,List<Person> receivers, String line) {
+    def static void parseLine(Model model, Person giver, List<Person> receivers, String line) {
         def values = Lists.newLinkedList(Splitter.on(';').split(line))
         values.removeFirst();
 
         receivers.each { receiver ->
             def value = values.removeFirst()
-            switch(value){
+            switch (value) {
                 case '1':
                     model.setCanGive(giver, receiver)
                     break;
@@ -55,7 +55,7 @@ class ModelLoader {
                     break;
                 default:
                     //TODO my exception + test
-                    throw new IOException("Value: "+value + " in line: "+line+" not supported.")
+                    throw new IOException("Value: " + value + " in line: " + line + " not supported.")
             }
         }
     }
