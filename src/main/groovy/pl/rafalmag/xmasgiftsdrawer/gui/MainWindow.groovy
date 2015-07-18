@@ -47,8 +47,8 @@ class MainWindow extends UI {
 
         model.getPersons().each { giver ->
             Item giverItem = container.addItem(giver)
-            model.getPersons().each { getter ->
-                giverItem.getItemProperty(getter).setValue(model.canGive(giver, getter))
+            model.getPersons().each { receiver ->
+                giverItem.getItemProperty(receiver).setValue(model.canGive(giver, receiver))
             }
         }
         container

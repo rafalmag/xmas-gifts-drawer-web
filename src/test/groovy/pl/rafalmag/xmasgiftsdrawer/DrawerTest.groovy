@@ -12,7 +12,7 @@ import java.util.concurrent.TimeoutException
 
 class DrawerTest extends Specification {
 
-    def "should generate GiverGetter aggregator"() {
+    def "should generate GiverReceiver aggregator"() {
         given:
         def a = new Person("A")
         def b = new Person("B")
@@ -20,13 +20,13 @@ class DrawerTest extends Specification {
         def drawer = new Drawer(model);
 
         when:
-        def giversGetters = drawer.draw()
+        def giversReceivers = drawer.draw()
         then:
-        giversGetters.isValid(model)
-        giversGetters.pairs.containsAll([new GiverGetter(a, b), new GiverGetter(b, a)])
+        giversReceivers.isValid(model)
+        giversReceivers.pairs.containsAll([new GiverReceiver(a, b), new GiverReceiver(b, a)])
     }
 
-    def "should generate GiverGetter aggregator for 3 persons"() {
+    def "should generate GiverReceiver aggregator for 3 persons"() {
         given:
         def a = new Person("A")
         def b = new Person("B")
@@ -35,30 +35,30 @@ class DrawerTest extends Specification {
         def drawer = new Drawer(model, new Random(2));
 
         when:
-        def giversGetters = drawer.draw()
+        def giversReceivers = drawer.draw()
         then:
-        giversGetters.isValid(model)
-        giversGetters.pairs.containsAll([new GiverGetter(a, b), new GiverGetter(b, c), new GiverGetter(c, a)]) ||
-                giversGetters.pairs.containsAll([new GiverGetter(c, b), new GiverGetter(b, a), new GiverGetter(a, c)])
+        giversReceivers.isValid(model)
+        giversReceivers.pairs.containsAll([new GiverReceiver(a, b), new GiverReceiver(b, c), new GiverReceiver(c, a)]) ||
+                giversReceivers.pairs.containsAll([new GiverReceiver(c, b), new GiverReceiver(b, a), new GiverReceiver(a, c)])
     }
 
     @Timeout(value = 1, unit = TimeUnit.SECONDS)
-    def "should return randomized GiversGetters for the same input"() {
+    def "should return randomized GiversReceivers for the same input"() {
         setup:
         def a = new Person("A")
         def b = new Person("B")
         def c = new Person("C")
         def model = new Model([a, b, c])
         def drawer = new Drawer(model, new Random(2));
-        def oldGiversGetters  =null
-        def giversGetters=null
+        def oldGiversReceivers  =null
+        def giversReceivers=null
         when:
-        while (oldGiversGetters == null || giversGetters == oldGiversGetters) {
-            oldGiversGetters = giversGetters
-            giversGetters = drawer.draw()
+        while (oldGiversReceivers == null || giversReceivers == oldGiversReceivers) {
+            oldGiversReceivers = giversReceivers
+            giversReceivers = drawer.draw()
         }
         then:
-        giversGetters != oldGiversGetters
+        giversReceivers != oldGiversReceivers
     }
 
     @Timeout(value = 5, unit = TimeUnit.SECONDS)

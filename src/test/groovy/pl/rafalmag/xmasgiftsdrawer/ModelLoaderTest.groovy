@@ -59,12 +59,12 @@ public class ModelLoaderTest extends Specification {
 
     def "should parse line"() {
         given:
-        def getters = [a, b, c, d]
+        def receivers = [a, b, c, d]
         Model model = new Model()
         def giver = a
 
         when:
-        ModelLoader.parseLine(model, giver, getters, "A;0;1;0;1")
+        ModelLoader.parseLine(model, giver, receivers, "A;0;1;0;1")
 
         then:
         !model.canGive(giver, a)

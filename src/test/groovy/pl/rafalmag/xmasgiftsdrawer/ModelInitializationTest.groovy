@@ -15,10 +15,10 @@ public class ModelInitializationTest extends spock.lang.Specification {
 
     def "anyone should be able to give gift to anyone else"() {
         expect:
-        model.canGive(giver, getter);
+        model.canGive(giver, receiver);
 
         where:
-        giver | getter
+        giver | receiver
         a     | b
         a     | c
         b     | a
@@ -29,10 +29,10 @@ public class ModelInitializationTest extends spock.lang.Specification {
 
     def "anyone should not give himself a gift"() {
         expect:
-        !model.canGive(giver, getter);
+        !model.canGive(giver, receiver);
 
         where:
-        giver | getter
+        giver | receiver
         a     | a
         b     | b
         c     | c

@@ -22,7 +22,7 @@ class Drawer {
         this.random = random;
     }
 
-    GiversGetters draw(long timeout = 5, TimeUnit timeUnit = TimeUnit.SECONDS) throws TimeoutException, InterruptedException {
+    GiversReceivers draw(long timeout = 5, TimeUnit timeUnit = TimeUnit.SECONDS) throws TimeoutException, InterruptedException {
         Timeout timeoutCounter = new Timeout(timeout, timeUnit);
         def gg
         while (gg == null || !gg.isValid(model)) {
@@ -32,27 +32,27 @@ class Drawer {
         gg
     }
 
-    GiversGetters drawRandomly() {
-        List<GiverGetter> pairs = []
-        def usedGetters = []
+    GiversReceivers drawRandomly() {
+        List<GiverReceiver> pairs = []
+        def usedReceivers = []
         List<Person> givers = Lists.newArrayList(model.getPersons())
         def usedGivers = []
-        List<Person> getters = Lists.newArrayList(model.getPersons())
+        List<Person> receivers = Lists.newArrayList(model.getPersons())
         Collections.shuffle(givers, random)
-        Collections.shuffle(getters, random)
+        Collections.shuffle(receivers, random)
         givers.each { giver ->
-            getters.each { getter ->
-//                println "giver: " + giver + " getter: "+getter
-                if (model.canGive(giver, getter) && !usedGetters.contains(getter) && !usedGivers.contains(giver)) {
-                    def giverGetter = new GiverGetter(giver, getter)
-//                    println "giverGetter: " + giverGetter
-                    pairs.add(giverGetter)
-                    usedGetters.add(getter)
+            receivers.each { receiver ->
+//                println "giver: " + giver + " receiver: "+receiver
+                if (model.canGive(giver, receiver) && !usedReceivers.contains(receiver) && !usedGivers.contains(giver)) {
+                    def giverReceiver = new GiverReceiver(giver, receiver)
+//                    println "giverReceiver: " + giverReceiver
+                    pairs.add(giverReceiver)
+                    usedReceivers.add(receiver)
                     usedGivers.add(giver)
                 }
             }
         }
         println pairs;
-        return new GiversGetters(pairs);
+        return new GiversReceivers(pairs);
     }
 }

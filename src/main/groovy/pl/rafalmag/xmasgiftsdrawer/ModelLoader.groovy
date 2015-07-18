@@ -40,18 +40,18 @@ class ModelLoader {
         assert readLine() == null
     }
 
-    def static void parseLine(Model model, Person giver,List<Person> getters, String line) {
+    def static void parseLine(Model model, Person giver,List<Person> receivers, String line) {
         def values = Lists.newLinkedList(Splitter.on(';').split(line))
         values.removeFirst();
 
-        getters.each { getter ->
+        receivers.each { receiver ->
             def value = values.removeFirst()
             switch(value){
                 case '1':
-                    model.setCanGive(giver, getter)
+                    model.setCanGive(giver, receiver)
                     break;
                 case '0':
-                    model.setCannotGive(giver, getter)
+                    model.setCannotGive(giver, receiver)
                     break;
                 default:
                     //TODO my exception + test

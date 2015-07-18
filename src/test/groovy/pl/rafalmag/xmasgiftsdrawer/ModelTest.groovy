@@ -5,7 +5,7 @@ import spock.lang.Specification
 
 class ModelTest extends Specification {
 
-    def "should allow to init model using getters and setters"() {
+    def "should allow to init model using receivers and setters"() {
         def a = new Person("A")
         def b = new Person("B")
         def c = new Person("C")

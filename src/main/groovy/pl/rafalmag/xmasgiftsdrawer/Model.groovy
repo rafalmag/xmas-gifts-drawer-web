@@ -5,7 +5,7 @@ import com.google.common.collect.Table
 
 class Model {
 
-    private final Table<Person /*giver*/, Person/*getter*/, Boolean> table
+    private final Table<Person /*giver*/, Person/*receiver*/, Boolean> table
     private final IModelValidator validator
 
 
@@ -17,18 +17,18 @@ class Model {
 
     private void initTable(List<Person> persons) {
         persons.each { giver ->
-            persons.each { getter ->
-                if (giver.equals(getter)) {
-                    setCannotGive(giver, getter)
+            persons.each { receiver ->
+                if (giver.equals(receiver)) {
+                    setCannotGive(giver, receiver)
                 } else {
-                    setCanGive(giver, getter)
+                    setCanGive(giver, receiver)
                 }
             }
         }
     }
 
-    public boolean canGive(Person giver, Person getter) {
-        table.get(giver, getter)
+    public boolean canGive(Person giver, Person receiver) {
+        table.get(giver, receiver)
     }
 
     public Set<Person> getPersons() {
@@ -38,12 +38,12 @@ class Model {
         persons
     }
 
-    public void setCanGive(Person giver, Person getter) {
-        table.put(giver, getter, true)
+    public void setCanGive(Person giver, Person receiver) {
+        table.put(giver, receiver, true)
     }
 
-    public void setCannotGive(Person giver, Person getter) {
-        table.put giver, getter, false
+    public void setCannotGive(Person giver, Person receiver) {
+        table.put giver, receiver, false
     }
 
     public boolean isValid() {
@@ -58,8 +58,8 @@ class Model {
         toString += "\n"
         getPersons().each { giver ->
             toString += giver.toString() + ";"
-            getPersons().each { getter ->
-                def canGive = canGive(giver, getter) ? "1" : "0"
+            getPersons().each { receiver ->
+                def canGive = canGive(giver, receiver) ? "1" : "0"
                 toString += canGive + ";"
             }
             toString += "\n"

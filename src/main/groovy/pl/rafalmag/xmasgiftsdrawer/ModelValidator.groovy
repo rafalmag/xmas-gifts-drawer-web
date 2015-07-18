@@ -23,20 +23,20 @@ class ModelValidator implements IModelValidator {
     }
 
     static boolean isValidEveryoneGetsGift(Model model) {
-        model.getPersons().findAll { getter ->
-            def firstGiverForGetter = model.getPersons().find { giver ->
-                model.canGive(giver, getter)
+        model.getPersons().findAll { receiver ->
+            def firstGiverForReceiver = model.getPersons().find { giver ->
+                model.canGive(giver, receiver)
             }
-            firstGiverForGetter == null
+            firstGiverForReceiver == null
         }.isEmpty()
     }
 
     static boolean isValidEveryoneGivesGift(Model model) {
         model.getPersons().findAll { giver ->
-            def firstGetterForGiver = model.getPersons().find { getter ->
-                model.canGive(giver, getter)
+            def firstReceiverForGiver = model.getPersons().find { receiver ->
+                model.canGive(giver, receiver)
             }
-            firstGetterForGiver == null
+            firstReceiverForGiver == null
         }.isEmpty()
     }
 }
