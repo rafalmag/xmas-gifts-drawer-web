@@ -1,5 +1,10 @@
-package pl.rafalmag.xmasgiftsdrawer
+package pl.rafalmag.xmasgiftsdrawer.algorithms
 
+import pl.rafalmag.xmasgiftsdrawer.GiverReceiver
+import pl.rafalmag.xmasgiftsdrawer.IModelValidator
+import pl.rafalmag.xmasgiftsdrawer.Model
+import pl.rafalmag.xmasgiftsdrawer.Person
+import pl.rafalmag.xmasgiftsdrawer.algorithms.Drawer
 import spock.lang.Specification
 import spock.lang.Timeout
 

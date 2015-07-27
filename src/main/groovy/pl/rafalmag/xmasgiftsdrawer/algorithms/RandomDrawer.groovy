@@ -1,9 +1,14 @@
-package pl.rafalmag.xmasgiftsdrawer
+package pl.rafalmag.xmasgiftsdrawer.algorithms
 
 import com.google.common.base.Preconditions
 import com.google.common.collect.Lists
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
+import pl.rafalmag.xmasgiftsdrawer.GiverReceiver
+import pl.rafalmag.xmasgiftsdrawer.GiversReceivers
+import pl.rafalmag.xmasgiftsdrawer.Model
+import pl.rafalmag.xmasgiftsdrawer.Person
+import pl.rafalmag.xmasgiftsdrawer.Timeout
 
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException

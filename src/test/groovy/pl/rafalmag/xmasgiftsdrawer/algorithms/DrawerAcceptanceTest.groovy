@@ -1,5 +1,11 @@
-package pl.rafalmag.xmasgiftsdrawer
+package pl.rafalmag.xmasgiftsdrawer.algorithms
 
+import pl.rafalmag.xmasgiftsdrawer.GiverReceiver
+import pl.rafalmag.xmasgiftsdrawer.Model
+import pl.rafalmag.xmasgiftsdrawer.ModelLoader
+import pl.rafalmag.xmasgiftsdrawer.ModelLoaderTest
+import pl.rafalmag.xmasgiftsdrawer.Person
+import pl.rafalmag.xmasgiftsdrawer.algorithms.RandomDrawer
 import spock.lang.Specification
 
 class DrawerAcceptanceTest extends Specification {
