@@ -1,5 +1,7 @@
 package pl.rafalmag.xmasgiftsdrawer
 
+import com.google.common.annotations.VisibleForTesting
+
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 
@@ -11,7 +13,8 @@ class Timeout {
         this.stopTimeMs = currentTime() + timeUnit.toMillis(timeout)
     }
 
-    private long currentTime() {
+    @VisibleForTesting
+    protected long currentTime() {
         System.currentTimeMillis()
     }
 
