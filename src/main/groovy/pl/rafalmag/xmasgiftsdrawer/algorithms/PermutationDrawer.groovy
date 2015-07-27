@@ -17,7 +17,7 @@ class PermutationDrawer implements Drawer {
     final private Random random;
 
     public PermutationDrawer(Model model, Random random = new Random()) {
-        Preconditions.checkArgument(model.isValid(), "model is invalid")
+        Preconditions.checkArgument(model.isValid(), "model %s is invalid", model)
         this.model = model
         this.random = random
     }
