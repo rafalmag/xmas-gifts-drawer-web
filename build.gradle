@@ -26,4 +26,6 @@ dependencies {
 //    compile "org.easytesting:fest-assert-core:2.0M8"
     testCompile 'org.assertj:assertj-core:1.7.0'
     compile 'grph:grph:1.6+'
+    compile 'org.graphstream:gs-core:1.3'
+
 }
