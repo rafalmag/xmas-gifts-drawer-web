@@ -22,8 +22,8 @@ class Graph2 {
         for (Person giver : model.persons) {
             for (Person receiver : model.persons) {
                 if (model.canGive(giver, receiver)) {
-                    def giverVertex = personsToNodes.get(giver)
-                    def receiverVertex = personsToNodes.get(receiver)
+                    def giverVertex = personsToNodes[giver]
+                    def receiverVertex = personsToNodes[receiver]
                     def edgeId = "${giver.name}-${receiver.name}"
                     graph.addEdge(edgeId, giverVertex, receiverVertex, true)
                 }

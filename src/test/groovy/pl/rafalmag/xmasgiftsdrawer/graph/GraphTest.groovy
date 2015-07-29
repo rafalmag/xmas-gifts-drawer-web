@@ -24,25 +24,25 @@ class GraphTest extends Specification {
         graph.graph.vertices.size() == 4
         graph.graph.isDirectedSimpleGraph()
 // check directions
-        !graph.graph.isDirectedSimpleEdge(graph.nodes.get(a), graph.nodes.get(a)) // seems obvious
-        graph.graph.isDirectedSimpleEdge(graph.nodes.get(a), graph.nodes.get(b))
-        graph.graph.isDirectedSimpleEdge(graph.nodes.get(a), graph.nodes.get(c))
-        graph.graph.isDirectedSimpleEdge(graph.nodes.get(a), graph.nodes.get(d))
+        !graph.graph.isDirectedSimpleEdge(graph.nodes[a], graph.nodes[a]) // seems obvious
+        graph.graph.isDirectedSimpleEdge(graph.nodes[a], graph.nodes[b])
+        graph.graph.isDirectedSimpleEdge(graph.nodes[a], graph.nodes[c])
+        graph.graph.isDirectedSimpleEdge(graph.nodes[a], graph.nodes[d])
 
-        graph.graph.isDirectedSimpleEdge(graph.nodes.get(b), graph.nodes.get(a))
-        !graph.graph.isDirectedSimpleEdge(graph.nodes.get(b), graph.nodes.get(b)) // seems obvious
-        !graph.graph.isDirectedSimpleEdge(graph.nodes.get(b), graph.nodes.get(c)) // special rule in model.csv
-        graph.graph.isDirectedSimpleEdge(graph.nodes.get(b), graph.nodes.get(d))
+        graph.graph.isDirectedSimpleEdge(graph.nodes[b], graph.nodes[a])
+        !graph.graph.isDirectedSimpleEdge(graph.nodes[b], graph.nodes[b]) // seems obvious
+        !graph.graph.isDirectedSimpleEdge(graph.nodes[b], graph.nodes[c]) // special rule in model.csv
+        graph.graph.isDirectedSimpleEdge(graph.nodes[b], graph.nodes[d])
 
-        graph.graph.isDirectedSimpleEdge(graph.nodes.get(c), graph.nodes.get(a))
-        graph.graph.isDirectedSimpleEdge(graph.nodes.get(c), graph.nodes.get(b))
-        !graph.graph.isDirectedSimpleEdge(graph.nodes.get(c), graph.nodes.get(c)) // seems obvious
-        graph.graph.isDirectedSimpleEdge(graph.nodes.get(c), graph.nodes.get(d))
+        graph.graph.isDirectedSimpleEdge(graph.nodes[c], graph.nodes[a])
+        graph.graph.isDirectedSimpleEdge(graph.nodes[c], graph.nodes[b])
+        !graph.graph.isDirectedSimpleEdge(graph.nodes[c], graph.nodes[c]) // seems obvious
+        graph.graph.isDirectedSimpleEdge(graph.nodes[c], graph.nodes[d])
 
-        graph.graph.isDirectedSimpleEdge(graph.nodes.get(d), graph.nodes.get(a))
-        graph.graph.isDirectedSimpleEdge(graph.nodes.get(d), graph.nodes.get(b))
-        graph.graph.isDirectedSimpleEdge(graph.nodes.get(d), graph.nodes.get(c))
-        !graph.graph.isDirectedSimpleEdge(graph.nodes.get(d), graph.nodes.get(d))  // seems obvious
+        graph.graph.isDirectedSimpleEdge(graph.nodes[d], graph.nodes[a])
+        graph.graph.isDirectedSimpleEdge(graph.nodes[d], graph.nodes[b])
+        graph.graph.isDirectedSimpleEdge(graph.nodes[d], graph.nodes[c])
+        !graph.graph.isDirectedSimpleEdge(graph.nodes[d], graph.nodes[d])  // seems obvious
 
     }
 }

@@ -19,8 +19,8 @@ public class Graph {
         for (Person giver : model.persons) {
             for (Person receiver : model.persons) {
                 if (model.canGive(giver, receiver)) {
-                    int giverVertex = nodes.get(giver)
-                    int receiverVertex = nodes.get(receiver)
+                    int giverVertex = nodes[giver]
+                    int receiverVertex = nodes[receiver]
                     graph.addDirectedSimpleEdge(giverVertex, receiverVertex)
                 }
             }
