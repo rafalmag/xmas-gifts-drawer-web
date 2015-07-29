@@ -1,5 +1,6 @@
 package pl.rafalmag.xmasgiftsdrawer.graph
 
+import org.graphstream.algorithm.ConnectedComponents
 import org.graphstream.graph.Node
 import pl.rafalmag.xmasgiftsdrawer.ModelLoader
 import pl.rafalmag.xmasgiftsdrawer.ModelLoaderTest
@@ -33,5 +34,7 @@ class Graph2Test extends Specification {
         graph.personsToNodes[b].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [a, d]
         graph.personsToNodes[c].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [a, b, d]
         graph.personsToNodes[d].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [a, b, c]
+        then:
+        new ConnectedComponents(graph.graph).getConnectedComponentsCount() == 1
     }
 }
