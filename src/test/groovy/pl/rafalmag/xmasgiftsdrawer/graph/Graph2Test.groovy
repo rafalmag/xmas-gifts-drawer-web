@@ -3,6 +3,7 @@ package pl.rafalmag.xmasgiftsdrawer.graph
 import org.graphstream.graph.Node
 import pl.rafalmag.xmasgiftsdrawer.ModelLoader
 import pl.rafalmag.xmasgiftsdrawer.ModelLoaderTest
+import pl.rafalmag.xmasgiftsdrawer.Person
 import spock.lang.Specification
 
 class Graph2Test extends Specification {
@@ -13,6 +14,10 @@ class Graph2Test extends Specification {
         def modelLoader = new ModelLoader(streamToModel)
         def model = modelLoader.load()
         streamToModel.close()
+        def a = new Person("A")
+        def b = new Person("B")
+        def c = new Person("C")
+        def d = new Person("D")
         when:
         def graph = new Graph2(model)
         then:
@@ -24,5 +29,9 @@ class Graph2Test extends Specification {
             assert model.canGive(source.getAttribute("person"), target.getAttribute("person"))
             true
         }
+        graph.personsToNodes[a].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [b, c, d]
+        graph.personsToNodes[b].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [a, d]
+        graph.personsToNodes[c].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [a, b, d]
+        graph.personsToNodes[d].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [a, b, c]
     }
 }

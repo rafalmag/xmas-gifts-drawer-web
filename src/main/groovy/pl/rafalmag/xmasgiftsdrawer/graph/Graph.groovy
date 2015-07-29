@@ -18,6 +18,7 @@ public class Graph {
             def vertex = graph.addVertex()
             [(it): vertex]
         })
+        assert graph.edges.size() == 0
         for (Person giver : model.persons) {
             for (Person receiver : model.persons) {
                 if (model.canGive(giver, receiver)) {
