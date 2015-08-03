@@ -36,5 +36,6 @@ class GraphTest extends Specification {
 //        graph.graph.getOutEdges(graph.nodes[b]).collect{graph.nodes.inverse()[it.value]}.sort() == [a,d]
 //        graph.graph.getOutEdges(graph.nodes[c]).collect{graph.nodes.inverse()[it.value]}.sort() == [a,b,d]
 //        graph.graph.getOutEdges(graph.nodes[d]).collect{graph.nodes.inverse()[it.value]}.sort() == [a,b,c]
+//        HamiltonianPaths.find(graph.nodes[a], graph.graph, 40).size() > 0
     }
 }

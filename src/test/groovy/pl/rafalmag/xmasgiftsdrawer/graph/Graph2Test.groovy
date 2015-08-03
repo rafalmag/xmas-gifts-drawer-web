@@ -36,5 +36,7 @@ class Graph2Test extends Specification {
         graph.personsToNodes[d].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [a, b, c]
         then:
         new ConnectedComponents(graph.graph).getConnectedComponentsCount() == 1
+        new ConnectedComponents(graph.graph).getGiantComponent().sort() == graph.graph.nodeSet.sort()
+        graph.graph.getNode(0).getBreadthFirstIterator(true)
     }
 }
