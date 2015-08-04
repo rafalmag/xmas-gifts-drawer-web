@@ -47,4 +47,14 @@ class TimeoutTest extends Specification {
         then:
         thrown(InterruptedException)
     }
+
+    void cleanup() {
+        // clean interrupted flag
+        try {
+            Thread.currentThread().sleep(0)
+        } catch (InterruptedException ignored) {
+            // ignored
+        }
+
+    }
 }
