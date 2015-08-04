@@ -1,10 +1,15 @@
 package pl.rafalmag.xmasgiftsdrawer
 
-import groovy.transform.Immutable
+import groovy.transform.Canonical
 
-@Immutable
+@Canonical
 class GiverReceiver {
 
     final Person giver;
     final Person receiver;
+
+    GiverReceiver(Person giver, Person receiver) {
+        this.giver = giver
+        this.receiver = receiver
+    }
 }

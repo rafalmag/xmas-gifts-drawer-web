@@ -3,11 +3,7 @@ package pl.rafalmag.xmasgiftsdrawer.algorithms
 import com.google.common.base.Preconditions
 import com.google.common.collect.Collections2
 import groovy.stream.Stream
-import pl.rafalmag.xmasgiftsdrawer.GiverReceiver
-import pl.rafalmag.xmasgiftsdrawer.GiversReceivers
-import pl.rafalmag.xmasgiftsdrawer.Model
-import pl.rafalmag.xmasgiftsdrawer.Person
-import pl.rafalmag.xmasgiftsdrawer.Timeout
+import pl.rafalmag.xmasgiftsdrawer.*
 
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
@@ -26,15 +22,10 @@ class PermutationDrawer implements Drawer {
         Timeout timeoutCounter = new Timeout(timeout, timeUnit);
         List<Person> persons = new ArrayList<>(model.persons)
         Collections.shuffle(persons, random);
-        def permutations = Collections2.permutations(persons);
+        Collection<List<Person>> permutations = Collections2.<Person> permutations(persons);
 
         GiversReceivers giversReceivers = Stream.from(permutations).map {
-            List<GiverReceiver> pairs = []
-            for (int i; i < it.size() - 1; i++) {
-                pairs.add(new GiverReceiver(it[i], it[i + 1]))
-            }
-            pairs.add(new GiverReceiver(it[it.size() - 1], it[0]))
-            new GiversReceivers(pairs)
+            GiversReceiversFactory.fromPersonList(it)
         }.find {
             timeoutCounter.checkTimeout();
             it.isValid(model)

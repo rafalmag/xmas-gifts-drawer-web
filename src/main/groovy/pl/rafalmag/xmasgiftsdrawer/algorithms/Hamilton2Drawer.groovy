@@ -2,8 +2,8 @@ package pl.rafalmag.xmasgiftsdrawer.algorithms
 
 import com.google.common.base.Preconditions
 import org.graphstream.algorithm.ConnectedComponents
-import pl.rafalmag.xmasgiftsdrawer.GiverReceiver
 import pl.rafalmag.xmasgiftsdrawer.GiversReceivers
+import pl.rafalmag.xmasgiftsdrawer.GiversReceiversFactory
 import pl.rafalmag.xmasgiftsdrawer.Model
 import pl.rafalmag.xmasgiftsdrawer.Person
 import pl.rafalmag.xmasgiftsdrawer.graph.Graph2
@@ -48,10 +48,6 @@ class Hamilton2Drawer implements Drawer {
         hamiltonBacktrack2.compute()
         List<Person> persons = hamiltonBacktrack2.getHamiltonCycle().collect { Graph2.getPerson(it) }
 
-        List<GiverReceiver> pairs = []
-        for (int i = 0; i < persons.size() - 1; i++) {
-            pairs.add(new GiverReceiver(persons[i], persons[i + 1]))
-        }
-        new GiversReceivers(pairs)
+        GiversReceiversFactory.fromPersonList(persons)
     }
 }
