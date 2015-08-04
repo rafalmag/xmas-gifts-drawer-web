@@ -1,6 +1,7 @@
 package pl.rafalmag.xmasgiftsdrawer.algorithms
 
 import com.google.common.base.Preconditions
+import org.graphstream.algorithm.ConnectedComponents
 import pl.rafalmag.xmasgiftsdrawer.GiverReceiver
 import pl.rafalmag.xmasgiftsdrawer.GiversReceivers
 import pl.rafalmag.xmasgiftsdrawer.Model
@@ -24,26 +25,33 @@ class Hamilton2Drawer implements Drawer {
     GiversReceivers draw(long timeout = 5, TimeUnit timeUnit = TimeUnit.SECONDS) throws TimeoutException, InterruptedException {
         def executor = Executors.newSingleThreadExecutor();
         try {
-
             Future<GiversReceivers> future = executor.submit(new Callable() {
                 @Override
                 GiversReceivers call() throws Exception {
-                    def graph2 = new Graph2(model)
-                    def hamiltonBacktrack2 = new HamiltonBacktrack2(random)
-                    hamiltonBacktrack2.init(graph2.graph)
-                    hamiltonBacktrack2.compute()
-                    List<Person> list = hamiltonBacktrack2.getHamiltonCycle().collect { Graph2.getPerson(it) }
-
-                    List<GiverReceiver> pairs = []
-                    for (int i = 0; i < list.size() - 1; i++) {
-                        pairs.add(new GiverReceiver(list[i], list[i + 1]))
-                    }
-                    new GiversReceivers(pairs)
+                    drawInternal()
                 }
             })
             future.get(timeout, timeUnit);
         } finally {
             executor.shutdownNow()
         }
+    }
+
+    GiversReceivers drawInternal() {
+        def graph2 = new Graph2(model)
+        def hamiltonBacktrack2 = new HamiltonBacktrack2(random)
+
+        //TODO check islands
+        assert new ConnectedComponents(graph2.graph).getConnectedComponentsCount() == 1
+
+        hamiltonBacktrack2.init(graph2.graph)
+        hamiltonBacktrack2.compute()
+        List<Person> persons = hamiltonBacktrack2.getHamiltonCycle().collect { Graph2.getPerson(it) }
+
+        List<GiverReceiver> pairs = []
+        for (int i = 0; i < persons.size() - 1; i++) {
+            pairs.add(new GiverReceiver(persons[i], persons[i + 1]))
+        }
+        new GiversReceivers(pairs)
     }
 }

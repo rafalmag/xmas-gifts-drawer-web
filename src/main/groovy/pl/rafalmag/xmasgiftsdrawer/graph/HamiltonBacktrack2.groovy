@@ -70,9 +70,7 @@ class HamiltonBacktrack2 implements Algorithm {
             }
         } else {
             visited.add(vertex);
-            if (maxVisited < visited.size()) {
-                maxVisited = visited.size();
-            }
+            maxVisited = Math.max(maxVisited, visited.size())
 
             for (Node n : vertex.<Edge> getLeavingEdgeSet().collect { it.getTargetNode() }) {
                 if (!visited.contains(n)) {
