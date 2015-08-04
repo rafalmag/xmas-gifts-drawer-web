@@ -27,13 +27,19 @@ class Graph2Test extends Specification {
         graph.graph.getEdgeIterator().every {
             Node source = it.getSourceNode()
             Node target = it.getTargetNode()
-            assert model.canGive(source.getAttribute("person"), target.getAttribute("person"))
+            assert model.canGive(Graph2.getPerson(source), Graph2.getPerson(target))
             true
         }
-        graph.personsToNodes[a].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [b, c, d]
-        graph.personsToNodes[b].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [a, d]
-        graph.personsToNodes[c].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [a, b, d]
-        graph.personsToNodes[d].getEachLeavingEdge().collect { it.getTargetNode().getAttribute("person") }.sort() == [a, b, c]
+        graph.personsToNodes[a].getEachLeavingEdge().collect {
+            Graph2.getPerson(it.getTargetNode())
+        }.sort() == [b, c, d]
+        graph.personsToNodes[b].getEachLeavingEdge().collect { Graph2.getPerson(it.getTargetNode()) }.sort() == [a, d]
+        graph.personsToNodes[c].getEachLeavingEdge().collect {
+            Graph2.getPerson(it.getTargetNode())
+        }.sort() == [a, b, d]
+        graph.personsToNodes[d].getEachLeavingEdge().collect {
+            Graph2.getPerson(it.getTargetNode())
+        }.sort() == [a, b, c]
         then:
         new ConnectedComponents(graph.graph).getConnectedComponentsCount() == 1
         new ConnectedComponents(graph.graph).getGiantComponent().sort() == graph.graph.nodeSet.sort()
@@ -44,6 +50,6 @@ class Graph2Test extends Specification {
         alg.init(graph.graph)
         alg.compute();
         then:
-        alg.getHamiltonCycle().collect { it.getAttribute("person") } == [a, b, d, c, a]
+        alg.getHamiltonCycle().collect { Graph2.getPerson(it) } == [a, b, d, c, a]
     }
 }

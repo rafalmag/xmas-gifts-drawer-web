@@ -30,4 +30,8 @@ class Graph2 {
             }
         }
     }
+
+    static Person getPerson(Node node) {
+        node.getAttribute("person")
+    }
 }
