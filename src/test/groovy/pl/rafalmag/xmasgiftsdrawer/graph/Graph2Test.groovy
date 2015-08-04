@@ -44,12 +44,5 @@ class Graph2Test extends Specification {
         new ConnectedComponents(graph.graph).getConnectedComponentsCount() == 1
         new ConnectedComponents(graph.graph).getGiantComponent().sort() == graph.graph.nodeSet.sort()
         graph.graph.getNode(0).getBreadthFirstIterator(true)
-        // hamilton cycle test
-        when:
-        HamiltonBacktrack2 alg = new HamiltonBacktrack2()
-        alg.init(graph.graph)
-        alg.compute();
-        then:
-        alg.getHamiltonCycle().collect { Graph2.getPerson(it) } == [a, b, d, c, a]
     }
 }

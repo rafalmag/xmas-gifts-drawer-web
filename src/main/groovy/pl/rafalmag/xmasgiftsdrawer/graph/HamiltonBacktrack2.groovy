@@ -20,6 +20,11 @@ class HamiltonBacktrack2 implements Algorithm {
     private int maxPath;
     private int maxVisited;
     private Node startVertex;
+    private Random random
+
+    public HamiltonBacktrack2(Random random = new Random()) {
+        this.random = random;
+    }
 
     @Override
     void init(Graph graph) {
@@ -30,12 +35,14 @@ class HamiltonBacktrack2 implements Algorithm {
         visited = Sets.newHashSet()
         maxPath = 0
         maxVisited = 0
-        // TODO random ?
-        startVertex = graph.<Node> getNodeIterator().next()
+        startVertex = getRandomNode(graph);
+    }
+
+    private Node getRandomNode(Graph graph) {
+        new ArrayList<Node>(graph.getNodeSet()).get(random.nextInt(graph.getNodeCount()))
     }
 
     public void compute() {
-        startVertex = graph.<Node> getNodeIterator().next();
         assert dfsHamilton(startVertex, 0);
     }
 
