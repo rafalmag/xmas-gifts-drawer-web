@@ -35,6 +35,5 @@ class Graph3Test extends Specification {
         graph.graph.outgoingEdgesOf(d).collect { it.target }.sort() == [a, b, c]
         then:
         new StrongConnectivityInspector<>(graph.graph).stronglyConnectedSubgraphs().size() == 1;
-//        new HamiltonianCycle().getApproximateOptimalForCompleteGraph(graph.graph)
     }
 }
