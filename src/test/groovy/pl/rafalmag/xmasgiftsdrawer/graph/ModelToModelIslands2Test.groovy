@@ -48,6 +48,15 @@ class ModelToModelIslands2Test extends Specification {
         !modelBD.persons.contains(c)
         modelAC.isValid()
         modelBD.isValid()
+    }
 
+    def "should work for empty model"() {
+        given:
+        def model = new Model()
+        when:
+        def result = new ModelToModelIslands2().modelToModelIslands(model)
+        then:
+        result.size() == 1
+        result[0].is(model)
     }
 }
