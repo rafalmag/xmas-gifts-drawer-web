@@ -47,12 +47,26 @@ class Model {
         persons
     }
 
-    public void setCanGive(Person giver, Person receiver) {
+    /**
+     *
+     * @param giver
+     * @param receiver
+     * @return self , so it can be easily chained to build model as one liner
+     */
+    public Model setCanGive(Person giver, Person receiver) {
         table.put(giver, receiver, true)
+        this
     }
 
-    public void setCannotGive(Person giver, Person receiver) {
-        table.put giver, receiver, false
+    /**
+     *
+     * @param giver
+     * @param receiver
+     * @return self , so it can be easily chained to build model as one liner
+     */
+    public Model setCannotGive(Person giver, Person receiver) {
+        table.put(giver, receiver, false)
+        this
     }
 
     public boolean isValid() {

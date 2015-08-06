@@ -21,10 +21,10 @@ class DrawerSolutionWithIslandsTest extends Specification {
 
     def setupSpec() {
         model = new Model()
-        model.setCanGive(c, a)
-        model.setCanGive(a, c)
-        model.setCanGive(b, d)
-        model.setCanGive(d, b)
+                .setCanGive(c, a)
+                .setCanGive(a, c)
+                .setCanGive(b, d)
+                .setCanGive(d, b)
     }
 
     def "should generate GiverReceiver find the only one valid combination"() {
@@ -32,7 +32,6 @@ class DrawerSolutionWithIslandsTest extends Specification {
         def giversReceivers = drawer.draw()
         then:
         giversReceivers.isValid(model)
-
         giversReceivers.pairs.sort() == [new GiverReceiver(b, d),
                                          new GiverReceiver(d, b),
                                          new GiverReceiver(a, c),
