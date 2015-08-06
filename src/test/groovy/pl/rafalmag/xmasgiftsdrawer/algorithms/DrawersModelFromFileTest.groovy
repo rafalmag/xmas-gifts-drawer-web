@@ -39,7 +39,7 @@ class DrawersModelFromFileTest extends Specification {
                                                      new GiverReceiver(d, d),
                                                      new GiverReceiver(b, c)]) // it was given in model.csv
         where:
-        drawer << [new RandomDrawer(model), new Hamilton2Drawer(model), new PermutationDrawer(model)]
+        drawer << [new RandomDrawer(model), new HamiltonDrawer(model), new PermutationDrawer(model)]
     }
 
 

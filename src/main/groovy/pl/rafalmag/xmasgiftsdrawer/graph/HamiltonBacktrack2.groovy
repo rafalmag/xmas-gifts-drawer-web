@@ -4,13 +4,16 @@ import com.google.common.collect.Lists
 import com.google.common.collect.Sets
 import groovy.util.logging.Slf4j
 import org.graphstream.algorithm.Algorithm
+import org.graphstream.algorithm.ConnectedComponents
 import org.graphstream.graph.Edge
 import org.graphstream.graph.Graph
 import org.graphstream.graph.Node
+import pl.rafalmag.xmasgiftsdrawer.Model
+import pl.rafalmag.xmasgiftsdrawer.Person
 
 // based on https://code.google.com/p/tal-hamilton-path-solver/source/browse/trunk/trunk/org.tal.hamilton.backtrack/src/org/tal/hamilton/backtrace/HamiltonBacktrack.java?r=21
 @Slf4j
-class HamiltonBacktrack2 implements Algorithm {
+class HamiltonBacktrack2 implements Algorithm, HamiltonCycle {
     private Graph graph;
 
     private Stack<Node> path
@@ -97,5 +100,14 @@ class HamiltonBacktrack2 implements Algorithm {
     @Override
     String toString() {
         return "Computes Hamilton cycle for graph:\n ${graph}"
+    }
+
+    @Override
+    public List<Person> getHamiltonCycle(Model model) {
+        def graph2 = new Graph2(model)
+        assert new ConnectedComponents(graph2.graph).getConnectedComponentsCount() == 1
+        init(graph2.graph)
+        compute()
+        getHamiltonCycle().collect { Graph2.getPerson(it) }
     }
 }
