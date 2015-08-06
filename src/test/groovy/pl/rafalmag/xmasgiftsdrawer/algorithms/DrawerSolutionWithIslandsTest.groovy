@@ -38,7 +38,7 @@ class DrawerSolutionWithIslandsTest extends Specification {
                                          new GiverReceiver(a, c),
                                          new GiverReceiver(c, a)].sort()
         where:
-        drawer << [new RandomDrawer(model), new HamiltonDrawer(model)]
+        drawer << [new RandomDrawer(model), new HamiltonDrawer(model), new PermutationDrawer(model)]
     }
 
 }
