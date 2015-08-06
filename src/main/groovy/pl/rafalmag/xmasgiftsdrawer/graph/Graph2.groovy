@@ -35,17 +35,4 @@ class Graph2 {
         node.getAttribute("person")
     }
 
-    def removeAllNodesExcept(List<Node> nodes) {
-        def nodesToBeRemoved = new HashSet<>(graph.getNodeSet());
-        nodesToBeRemoved.removeAll(nodes);
-        for (Node nodeToBeRemoved : nodesToBeRemoved) {
-            graph.removeNode(nodeToBeRemoved)
-        }
-    }
-
-    def removeNodes(List<Node> nodes) {
-        for (Node node : nodes) {
-            graph.removeNode(node)
-        }
-    }
 }

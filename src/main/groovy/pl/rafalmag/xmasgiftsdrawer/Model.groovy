@@ -8,6 +8,15 @@ class Model {
     private final Table<Person /*giver*/, Person/*receiver*/, Boolean> table
     private final IModelValidator validator
 
+    public Model(List<Person> limitedPersons, Model model) {
+        table = HashBasedTable.create(limitedPersons.size(), limitedPersons.size())
+        this.validator = model.validator
+        limitedPersons.each { giver ->
+            limitedPersons.each { receiver ->
+                table.put(giver, receiver, model.canGive(giver, receiver))
+            }
+        }
+    }
 
     public Model(List<Person> persons = [], IModelValidator modelValidator = new ModelValidator()) {
         table = HashBasedTable.create(persons.size(), persons.size())

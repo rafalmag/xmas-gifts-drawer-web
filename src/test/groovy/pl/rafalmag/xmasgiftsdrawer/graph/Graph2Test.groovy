@@ -1,7 +1,6 @@
 package pl.rafalmag.xmasgiftsdrawer.graph
 
 import org.graphstream.algorithm.ConnectedComponents
-import org.graphstream.graph.Edge
 import org.graphstream.graph.Node
 import pl.rafalmag.xmasgiftsdrawer.ModelLoader
 import pl.rafalmag.xmasgiftsdrawer.ModelLoaderTest
@@ -56,37 +55,4 @@ class Graph2Test extends Specification {
         graph.graph.getNode(0).getBreadthFirstIterator(true)
     }
 
-    def "should remove nodes"() {
-        given:
-        def graph = new Graph2(model)
-        def aNode = graph.personsToNodes[a]
-        when:
-        graph.removeNodes([aNode])
-        then:
-        graph.graph.nodeSet.collect { Graph2.getPerson(it) }.sort() == [b, c, d].sort()
-        graph.graph.nodeSet.every {
-            Node node ->
-                assert node.getEdgeSet().every {
-                    Edge edge ->
-                        assert edge.sourceNode != aNode && edge.targetNode != aNode
-                        true
-                }
-                true
-        }
-    }
-
-    def "should remove All nodes except"() {
-        given:
-        def graph = new Graph2(model)
-        def aNode = graph.personsToNodes[a]
-        when:
-        graph.removeAllNodesExcept([aNode])
-        then:
-        graph.graph.nodeSet.collect { Graph2.getPerson(it) }.sort() == [a].sort()
-        graph.graph.nodeSet.every {
-            Node node ->
-                assert node.getEdgeSet().isEmpty()
-                true
-        }
-    }
 }
