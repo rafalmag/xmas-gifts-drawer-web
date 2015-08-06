@@ -38,16 +38,36 @@ class Hamilton2Drawer implements Drawer {
     }
 
     GiversReceivers drawInternal() {
-        def graph2 = new Graph2(model)
+        def graph = new Graph2(model)
+
+        List<List<Person>> persons = getPersonsByHamiltonCycles(graph)
+        GiversReceiversFactory.fromPersonLists(persons)
+    }
+
+    private List<List<Person>> getPersonsByHamiltonCycles(Graph2 graph) {
+        List<List<Person>> result = []
+        def connectedComponents = new ConnectedComponents(graph.graph)
+        def giantIslandNodes = connectedComponents.getGiantComponent()
+        def count = connectedComponents.getConnectedComponentsCount()
+        graph.removeAllNodesExcept(giantIslandNodes)
+
+        List<Person> persons = getPersonsFromOneIslandGraph(graph)
+        result.add(persons)
+
+        if (count > 1) {
+            def graph2 = new Graph2(model)
+            graph2.removeNodes(giantIslandNodes)
+            result.addAll(getPersonsByHamiltonCycles(graph2))
+        }
+        result
+    }
+
+    private List<Person> getPersonsFromOneIslandGraph(Graph2 graph) {
+        assert new ConnectedComponents(graph.graph).getConnectedComponentsCount() == 1
         def hamiltonBacktrack2 = new HamiltonBacktrack2(random)
-
-        //TODO check islands
-        assert new ConnectedComponents(graph2.graph).getConnectedComponentsCount() == 1
-
-        hamiltonBacktrack2.init(graph2.graph)
+        hamiltonBacktrack2.init(graph.graph)
         hamiltonBacktrack2.compute()
         List<Person> persons = hamiltonBacktrack2.getHamiltonCycle().collect { Graph2.getPerson(it) }
-
-        GiversReceiversFactory.fromPersonList(persons)
+        persons
     }
 }

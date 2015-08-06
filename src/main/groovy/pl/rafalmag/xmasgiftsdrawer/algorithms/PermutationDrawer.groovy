@@ -3,7 +3,9 @@ package pl.rafalmag.xmasgiftsdrawer.algorithms
 import com.google.common.base.Preconditions
 import com.google.common.collect.Collections2
 import groovy.stream.Stream
+import org.graphstream.algorithm.ConnectedComponents
 import pl.rafalmag.xmasgiftsdrawer.*
+import pl.rafalmag.xmasgiftsdrawer.graph.Graph2
 
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
@@ -16,6 +18,7 @@ class PermutationDrawer implements Drawer {
         Preconditions.checkArgument(model.isValid(), "model %s is invalid", model)
         this.model = model
         this.random = random
+        assert new ConnectedComponents(new Graph2(model).graph).getConnectedComponentsCount() == 1
     }
 
     GiversReceivers draw(long timeout = 5, TimeUnit timeUnit = TimeUnit.SECONDS) throws TimeoutException, InterruptedException {
