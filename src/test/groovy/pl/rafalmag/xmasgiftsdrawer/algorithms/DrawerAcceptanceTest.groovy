@@ -1,14 +1,19 @@
 package pl.rafalmag.xmasgiftsdrawer.algorithms
 
-import pl.rafalmag.xmasgiftsdrawer.GiverReceiver
-import pl.rafalmag.xmasgiftsdrawer.Model
-import pl.rafalmag.xmasgiftsdrawer.ModelLoader
-import pl.rafalmag.xmasgiftsdrawer.ModelLoaderTest
-import pl.rafalmag.xmasgiftsdrawer.Person
-import pl.rafalmag.xmasgiftsdrawer.algorithms.RandomDrawer
+import pl.rafalmag.xmasgiftsdrawer.*
+import spock.lang.Shared
 import spock.lang.Specification
 
 class DrawerAcceptanceTest extends Specification {
+
+    @Shared
+    def a = new Person("A")
+    @Shared
+    def b = new Person("B")
+    @Shared
+    def c = new Person("C")
+    @Shared
+    def d = new Person("D")
 
     def "should draw respect models canGive"() {
         given:
@@ -16,31 +21,24 @@ class DrawerAcceptanceTest extends Specification {
         def modelLoader = new ModelLoader(streamToModel)
         def model = modelLoader.load()
         streamToModel.close()
-        def a = new Person("A")
-        def b = new Person("B")
-        def c = new Person("C")
-        def d = new Person("D")
+
         def drawer = new RandomDrawer(model);
 
         when:
         def giversReceivers = drawer.draw()
         then:
         giversReceivers.isValid(model)
-        !giversReceivers.pairs.contains(new GiverReceiver(a, a))
-        !giversReceivers.pairs.contains(new GiverReceiver(b, b))
-        !giversReceivers.pairs.contains(new GiverReceiver(c, c))
-        !giversReceivers.pairs.contains(new GiverReceiver(d, d))
-        !giversReceivers.pairs.contains(new GiverReceiver(b, c)) // it was given in model.csv
+        Collections.disjoint(giversReceivers.pairs, [new GiverReceiver(a, a),
+                                                     new GiverReceiver(b, b),
+                                                     new GiverReceiver(c, c),
+                                                     new GiverReceiver(d, d),
+                                                     new GiverReceiver(b, c)]) // it was given in model.csv
         where:
         i << (1..10) // run 10 times
     }
 
     def "should generate GiverReceiver find the only one valid combination"() {
         given:
-        def a = new Person("A")
-        def b = new Person("B")
-        def c = new Person("C")
-        def d = new Person("D")
         def model = new Model()
         model.setCanGive(c, a)
         model.setCanGive(a, c)
@@ -54,11 +52,10 @@ class DrawerAcceptanceTest extends Specification {
         then:
         giversReceivers.isValid(model)
 
-        giversReceivers.pairs.containsAll([
-                new GiverReceiver(b, d),
-                new GiverReceiver(d, b),
-                new GiverReceiver(a, c),
-                new GiverReceiver(c, a)])
+        giversReceivers.pairs.sort() == [new GiverReceiver(b, d),
+                                         new GiverReceiver(d, b),
+                                         new GiverReceiver(a, c),
+                                         new GiverReceiver(c, a)].sort()
     }
 
 }
