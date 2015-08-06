@@ -11,11 +11,13 @@ class ModelToModelIslands2 implements ModelToModelIslands {
         def count = connectedComponents.getConnectedComponentsCount()
         if (count > 1) {
             def giantIslandNodes = connectedComponents.getGiantComponent()
+            connectedComponents.terminate()
             def giantIslandPersons = giantIslandNodes.collect { Graph2.getPerson(it) }
             List<Model> result = []
             result.add(new Model(giantIslandPersons, model))
             def otherPersons = model.persons.toList()
             otherPersons.removeAll(giantIslandPersons)
+            // recurrent call
             result.addAll(modelToModelIslands(new Model(otherPersons, model)))
             result
         } else {

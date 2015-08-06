@@ -4,7 +4,6 @@ import com.google.common.collect.Lists
 import com.google.common.collect.Sets
 import groovy.util.logging.Slf4j
 import org.graphstream.algorithm.Algorithm
-import org.graphstream.algorithm.ConnectedComponents
 import org.graphstream.graph.Edge
 import org.graphstream.graph.Graph
 import org.graphstream.graph.Node
@@ -77,6 +76,7 @@ class HamiltonBacktrack2 implements Algorithm, HamiltonCycle {
 
             for (Node n : vertex.<Edge> getLeavingEdgeSet().collect { it.getTargetNode() }) {
                 if (!visited.contains(n)) {
+                    // recurrent call
                     if (dfsHamilton(n, d + 1)) {
                         foundCycle = true;
                         break;
@@ -105,7 +105,6 @@ class HamiltonBacktrack2 implements Algorithm, HamiltonCycle {
     @Override
     public List<Person> getHamiltonCycle(Model model) {
         def graph2 = new Graph2(model)
-        assert new ConnectedComponents(graph2.graph).getConnectedComponentsCount() == 1
         init(graph2.graph)
         compute()
         getHamiltonCycle().collect { Graph2.getPerson(it) }
