@@ -1,13 +1,17 @@
 package pl.rafalmag.xmasgiftsdrawer
 
-import groovy.transform.Immutable
+import groovy.transform.Canonical
 import groovy.util.logging.Slf4j
 
 @Slf4j
-@Immutable
+@Canonical
 class GiversReceivers {
 
     final List<GiverReceiver> pairs;
+
+    GiversReceivers(List<GiverReceiver> pairs) {
+        this.pairs = pairs
+    }
 
     public boolean isValid(Model model) {
         return nobodyBuysForHimself() && everybodyGivesAndGets() && quantityMatches(model) && respectsModelsRestrictions(model)

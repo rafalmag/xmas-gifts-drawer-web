@@ -1,11 +1,15 @@
 package pl.rafalmag.xmasgiftsdrawer
 
-import groovy.transform.Immutable
+import groovy.transform.Canonical
 
-@Immutable
+@Canonical
 class Person implements Comparable<Person> {
 
     final String name;
+
+    Person(String name) {
+        this.name = name
+    }
 
     String toString() {
         return name;

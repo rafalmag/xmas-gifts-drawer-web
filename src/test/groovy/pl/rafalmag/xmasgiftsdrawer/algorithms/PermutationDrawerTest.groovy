@@ -1,4 +1,6 @@
-package pl.rafalmag.xmasgiftsdrawer
+package pl.rafalmag.xmasgiftsdrawer.algorithms
+
+import pl.rafalmag.xmasgiftsdrawer.Model
 
 class PermutationDrawerTest extends DrawerTest {
     @Override

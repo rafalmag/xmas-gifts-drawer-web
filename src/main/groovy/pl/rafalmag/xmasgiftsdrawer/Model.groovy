@@ -8,6 +8,15 @@ class Model {
     private final Table<Person /*giver*/, Person/*receiver*/, Boolean> table
     private final IModelValidator validator
 
+    public Model(List<Person> limitedPersons, Model model) {
+        table = HashBasedTable.create(limitedPersons.size(), limitedPersons.size())
+        this.validator = model.validator
+        limitedPersons.each { giver ->
+            limitedPersons.each { receiver ->
+                table.put(giver, receiver, model.canGive(giver, receiver))
+            }
+        }
+    }
 
     public Model(List<Person> persons = [], IModelValidator modelValidator = new ModelValidator()) {
         table = HashBasedTable.create(persons.size(), persons.size())
@@ -38,12 +47,26 @@ class Model {
         persons
     }
 
-    public void setCanGive(Person giver, Person receiver) {
+    /**
+     *
+     * @param giver
+     * @param receiver
+     * @return self , so it can be easily chained to build model as one liner
+     */
+    public Model setCanGive(Person giver, Person receiver) {
         table.put(giver, receiver, true)
+        this
     }
 
-    public void setCannotGive(Person giver, Person receiver) {
-        table.put giver, receiver, false
+    /**
+     *
+     * @param giver
+     * @param receiver
+     * @return self , so it can be easily chained to build model as one liner
+     */
+    public Model setCannotGive(Person giver, Person receiver) {
+        table.put(giver, receiver, false)
+        this
     }
 
     public boolean isValid() {

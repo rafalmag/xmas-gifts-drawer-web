@@ -1,4 +1,6 @@
-package pl.rafalmag.xmasgiftsdrawer
+package pl.rafalmag.xmasgiftsdrawer.algorithms
+
+import pl.rafalmag.xmasgiftsdrawer.GiversReceivers
 
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
