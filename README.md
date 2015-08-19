@@ -3,6 +3,7 @@
 This project has tests running on Travis CI.
 
 [![Build Status](https://travis-ci.org/rafalmag/xmas-gifts-drawer.svg?branch=master)](https://travis-ci.org/rafalmag/xmas-gifts-drawer)
+[![Coverage Status](https://coveralls.io/repos/rafalmag/xmas-gifts-drawer/badge.svg?branch=master&service=github)](https://coveralls.io/github/rafalmag/xmas-gifts-drawer?branch=master)
 
 Sometimes there is a custom to exchange small gifts in schools / companies beeween pupils / employees 
 before Christmas or on St Nicholas Day.
