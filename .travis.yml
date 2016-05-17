@@ -4,7 +4,8 @@ jdk:
   - openjdk7
 
 before_install:
- - git clone "https://github.com/rafalmag/xmas-gifts-drawer.git" xmas
+ # tag version needs to be updated when dependnecy updated in gradle.build
+ - git clone --branch 0.1 "https://github.com/rafalmag/xmas-gifts-drawer.git" xmas
  - cd xmas
  - chmod +x gradlew
  - ./gradlew install

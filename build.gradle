@@ -31,6 +31,7 @@ repositories {
 }
 
 dependencies {
+    // update needs change in .travis.yml checkout "branch"
     compile 'pl.rafalmag.xmas:xmas:0.1'
     compile 'org.codehaus.groovy:groovy-all:2.3+'
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.3'
