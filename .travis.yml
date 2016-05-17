@@ -4,6 +4,11 @@ jdk:
   - openjdk7
 
 before_install:
+ - git clone "https://github.com/rafalmag/xmas-gifts-drawer.git" xmas
+ - cd xmas
+ - chmod +x gradlew
+ - gradlew install
+ - cd ..
  - chmod +x gradlew
  
 after_success:
